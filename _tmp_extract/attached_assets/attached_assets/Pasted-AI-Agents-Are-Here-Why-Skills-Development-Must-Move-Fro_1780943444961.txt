@@ -1,0 +1,79 @@
+AI Agents Are Here: Why Skills Development Must Move From Training to Workflow Readiness
+
+AI is no longer just a productivity tool sitting beside employees. The big shift is that AI is becoming part of the workflow itself. In 2025, McKinsey found that almost all companies were investing in AI, but only 1 percent believed they had reached maturity. The gap is no longer interest. The gap is readiness.
+
+The New AI Reality
+
+Generative AI has moved from simple content creation into agents, assistants, automation, decision support, customer service, coding, analytics, and knowledge management.
+
+That changes the skills conversation.
+
+Employees do not only need to know how to “use AI.” They need to know how to work with AI responsibly, evaluate its outputs, redesign processes around it, and understand where human judgement still matters.
+
+The World Economic Forum reports that AI, big data, cybersecurity, networks, and technological literacy are among the fastest growing skill priorities for employers.
+
+Why AI Adoption Is Not Enough
+
+Many organizations have already introduced AI tools. But adoption does not automatically create value.
+
+The real challenge is whether people know how to apply AI in the flow of work.
+
+Without the right skills, AI can create:
+
+• Faster mistakes
+• Poor quality outputs
+• Unclear accountability
+• Data and compliance risks
+• Employees who use AI without understanding its limits
+
+McKinsey’s 2025 workplace AI report argues that the biggest barrier to scaling AI is not employee resistance, but leadership and organizational readiness.
+
+The Rise of Workflow Skills
+
+The most valuable AI skills in 2026 will not be limited to prompt writing.
+
+High impact AI skills include:
+
+• AI assisted problem solving
+• Critical evaluation of AI outputs
+• Data literacy
+• Process redesign
+• Responsible AI usage
+• Cybersecurity awareness
+• Human judgement and decision making
+• Change readiness
+
+This is where many learning strategies need to evolve. Training employees on isolated tools is useful, but it is not enough. Organizations need to map AI skills directly to roles, workflows, risks, and business outcomes.
+
+Why This Matters for Business Leaders
+
+The IMF notes that AI is reshaping work and that workers need support to adapt, acquire new skills, and move into emerging opportunities.
+
+That means the organizations that win with AI will not simply be the ones buying the best tools. They will be the ones building the strongest workforce capability around those tools.
+
+AI success depends on people who can ask better questions, interpret better answers, make better decisions, and apply technology with purpose.
+
+What Organizations Should Do Next
+
+Instead of launching broad AI training for everyone, organizations should focus on targeted capability building.
+
+A stronger approach would be to:
+
+• Identify which roles are most affected by AI
+• Define the AI skills each role actually needs
+• Assess current readiness
+• Build practical learning pathways
+• Measure improvement through workplace outcomes
+• Review skills continuously as AI tools evolve
+
+This turns AI learning from a once off training exercise into a living skills strategy.
+
+The Okiru Perspective
+
+For Okiru, the message is clear: AI transformation is really a skills transformation.
+
+Organizations do not need more generic training. They need clearer visibility into workforce capability, smarter skills mapping, and development programs connected to measurable impact.
+
+The future of AI at work will belong to organizations that can answer one simple question:
+
+Do our people have the right skills to turn AI investment into real business value?

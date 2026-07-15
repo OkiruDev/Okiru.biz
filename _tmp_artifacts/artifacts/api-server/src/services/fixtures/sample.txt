@@ -1,0 +1,3 @@
+Okiru Conversion Test Fixture
+The quick brown fox jumps over the lazy dog.
+This document verifies real conversion paths.

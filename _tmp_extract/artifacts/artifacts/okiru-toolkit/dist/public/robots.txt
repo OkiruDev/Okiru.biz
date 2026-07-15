@@ -1,0 +1,115 @@
+# Okiru AI Tool Advisor — robots.txt
+# Last reviewed: 2026-05-08
+# We actively welcome indexing by traditional search engines AND AI / LLM crawlers
+# so that Okiru content surfaces in ChatGPT, Claude, Perplexity, Gemini, Copilot, etc.
+
+# ── Default: open to all well-behaved bots ──
+User-agent: *
+Allow: /
+Disallow: /blog/*.png$
+
+# ── OpenAI ──
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# ── Anthropic (Claude) ──
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+# ── Google (Gemini / AI Overviews / Vertex AI) ──
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# ── Apple Intelligence ──
+User-agent: Applebot-Extended
+Allow: /
+
+# ── Perplexity ──
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# ── Microsoft Copilot / Bing Chat ──
+User-agent: BingBot
+Allow: /
+
+# ── Meta AI ──
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# ── DuckDuckGo AI ──
+User-agent: DuckAssistBot
+Allow: /
+
+# ── Mistral ──
+User-agent: MistralAI-User
+Allow: /
+
+# ── Cohere ──
+User-agent: cohere-ai
+Allow: /
+
+User-agent: cohere-training-data-crawler
+Allow: /
+
+# ── You.com ──
+User-agent: YouBot
+Allow: /
+
+# ── Common Crawl (used by many LLM training pipelines) ──
+User-agent: CCBot
+Allow: /
+
+# ── Diffbot (LLM-grade structured extraction) ──
+User-agent: Diffbot
+Allow: /
+
+# ── ByteDance / Doubao ──
+User-agent: Bytespider
+Allow: /
+
+# ── Amazon (Alexa+ / Rufus) ──
+User-agent: Amazonbot
+Allow: /
+
+# ── Other AI crawlers ──
+User-agent: ImagesiftBot
+Allow: /
+
+User-agent: Timpibot
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+# ── Sitemaps ──
+Sitemap: https://okiru.biz/sitemap.xml

@@ -1,0 +1,61 @@
+# Anthropic Updates Privacy Policy as Claude Expands Its Capabilities
+
+As artificial intelligence platforms continue to evolve, transparency around data handling remains critical. Anthropic has announced updates to its Privacy Policy to reflect Claude's growing capabilities, particularly its ability to perform more complex tasks and integrate with third party applications.
+
+The updated policy applies only to consumer accounts, including Claude Free, Pro, and Max plans. Business customers using Claude Team, Claude Enterprise, the Claude Platform, or services governed by Anthropic's Commercial Terms are not affected by these changes.
+
+## Key Privacy Policy Updates
+
+### 1. Multi Step Tasks and Connected Applications
+
+Claude is increasingly capable of carrying out multi step workflows and interacting with external applications. Anthropic has expanded its Privacy Policy to explain how data may be shared between Claude and connected third party services when users authorize these integrations.
+
+This update provides greater clarity on how information moves between platforms when Claude performs actions on a user's behalf.
+
+### 2. Age and Identity Verification
+
+To support platform safety and security, Anthropic may request age or identity verification from certain users. The revised policy outlines what verification information may be collected and how it is processed.
+
+This reflects a broader industry trend toward stronger identity assurance measures as AI services become more widely adopted.
+
+### 3. Research and Study Participation
+
+Users who choose to participate in surveys, interviews, research programs, or other studies conducted by Anthropic will now find more detailed explanations regarding the information collected during these activities.
+
+The update improves transparency around voluntary participation in product research and development initiatives.
+
+### 4. Expanded Details on Data Practices
+
+Anthropic has also provided additional information about:
+
+• How it communicates with users
+
+• How service recommendations and product updates are delivered
+
+• Circumstances under which information may be shared with or received from third parties
+
+• The legal grounds used for processing personal information
+
+These additions are intended to help users better understand how their data is handled across different aspects of the Claude ecosystem.
+
+## What Hasn't Changed
+
+While the Privacy Policy has evolved alongside Claude's expanding functionality, Anthropic emphasized that several core commitments remain unchanged:
+
+• User data is not sold
+
+• Claude remains free from advertising
+
+• Users retain control over whether their chats and coding sessions can be used to train and improve Anthropic's AI models
+
+These commitments continue to differentiate Anthropic's approach in an increasingly competitive AI landscape.
+
+## Why This Matters
+
+As AI assistants become more capable of interacting with external systems and automating complex workflows, privacy policies must evolve to address new data flows and operational models.
+
+For businesses, consumers, and technology leaders alike, understanding how AI providers collect, process, and share information is becoming an essential part of responsible AI adoption.
+
+Anthropic's latest update reflects the growing maturity of AI platforms and highlights the importance of maintaining transparency as these technologies become more deeply integrated into everyday work and digital experiences.
+
+Organizations using AI solutions should regularly review vendor privacy policies to ensure alignment with their governance, compliance, and data protection requirements.
