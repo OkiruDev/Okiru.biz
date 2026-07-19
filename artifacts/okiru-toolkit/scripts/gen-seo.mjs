@@ -752,7 +752,7 @@ function injectIntoToolkit(tools, categories, byCat) {
     "@type": "WebSite",
     name: "Okiru AI Tool Advisor",
     url: `${ORIGIN}${APP}`,
-    description: "Learn to use AI professionally with Okiru — personalised guidance for professionals, teams and founders on the right business-intelligence and productivity tools, plus a plan to put AI to work. Compare 350+ tools. Built by Okiru Consulting.",
+    description: "Learn to use AI professionally with Okiru — personalised guidance for professionals, teams and founders on the right business-intelligence and productivity tools, plus a plan to put AI to work. Compare 550+ tools. Built by Okiru Consulting.",
     publisher: { "@type": "Organization", name: "Okiru Consulting", url: "https://www.okiru.co.za" },
     potentialAction: {
       "@type": "SearchAction",
