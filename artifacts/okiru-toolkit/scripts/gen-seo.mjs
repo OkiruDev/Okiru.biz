@@ -23,7 +23,7 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PUBLIC = resolve(__dirname, "..", "public");
-const ORIGIN = "https://okiru.biz";
+const ORIGIN = "https://www.okiru.biz";
 const APP = "/toolkit/"; // interactive app entry (deep-linkable via ?tool=)
 const TODAY = new Date().toISOString().slice(0, 10);
 
@@ -170,7 +170,7 @@ const FOOTER = (categories) => `
   </div>
   <div class="foot-fine">
     &copy; ${new Date().getFullYear()} Okiru (Pty) Ltd &middot; Reg. No. 2023/597303/07 &middot;
-    19 Ameshoff Street, Braamfontein, Johannesburg &middot; <a href="https://okiru.biz" style="color:var(--cyan)">okiru.biz</a>
+    19 Ameshoff Street, Braamfontein, Johannesburg &middot; <a href="https://www.okiru.biz" style="color:var(--cyan)">okiru.biz</a>
   </div>
 </div></footer>`;
 
@@ -769,7 +769,7 @@ function injectIntoToolkit(tools, categories, byCat) {
     logo: `${ORIGIN}/okiru-logo.png`,
     description: "South African AI consulting firm helping organisations build AI strategies, custom chatbots, document intelligence, workflow automation, and team training.",
     areaServed: ["South Africa", "Africa", "Worldwide"],
-    sameAs: ["https://www.okiru.co.za", "https://okiru.biz", "https://www.okiru.dev", "https://okiru.pro"],
+    sameAs: ["https://www.okiru.co.za", "https://www.okiru.biz", "https://www.okiru.dev", "https://okiru.pro"],
   };
   const itemListSchema = {
     "@context": "https://schema.org",

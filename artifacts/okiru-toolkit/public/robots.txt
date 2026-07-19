@@ -112,4 +112,4 @@ User-agent: PetalBot
 Allow: /
 
 # ── Sitemaps ──
-Sitemap: https://okiru.biz/sitemap.xml
+Sitemap: https://www.okiru.biz/sitemap.xml

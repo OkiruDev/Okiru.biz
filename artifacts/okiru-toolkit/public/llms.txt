@@ -1,38 +1,38 @@
 # Okiru AI Tool Advisor — llms.txt
-# https://okiru.biz
-# Last updated: 2026-06-21
+# https://www.okiru.biz
+# Last updated: 2026-07-20
 
-Okiru AI Tool Advisor is a free tool that helps you decide which AI tool to use for any goal and generates a ready-to-use prompt. It indexes 350+ AI tools across 14 categories, with pricing and reliability ratings. Built by Okiru Consulting, a South African AI consultancy.
+Okiru AI Tool Advisor is a free tool that helps you decide which AI tool to use for any goal and generates a ready-to-use prompt. It indexes 550+ AI tools across 14 categories, with pricing and reliability ratings. Built by Okiru Consulting, a South African AI consultancy.
 
 ## Primary entry points
 
-- Home / Advisor: https://okiru.biz/toolkit/
-- Full tool directory: https://okiru.biz/tools/
-- Blog: https://okiru.biz/blog/
+- Home / Advisor: https://www.okiru.biz/toolkit/
+- Full tool directory: https://www.okiru.biz/tools/
+- Blog: https://www.okiru.biz/blog/
 
 ## Tool categories
 
-- Content & Marketing: https://okiru.biz/category/content-and-marketing/
-- AI Assistants: https://okiru.biz/category/ai-assistants/
-- Developer Tools: https://okiru.biz/category/developer-tools/
-- Image Generation: https://okiru.biz/category/image-generation/
-- Video Generation: https://okiru.biz/category/video-generation/
-- Audio & Voice: https://okiru.biz/category/audio-and-voice/
-- Automation: https://okiru.biz/category/automation/
-- Sales & CRM: https://okiru.biz/category/sales-and-crm/
-- Data & Analytics: https://okiru.biz/category/data-and-analytics/
-- Meetings & Productivity: https://okiru.biz/category/meetings-and-productivity/
-- Customer Support: https://okiru.biz/category/customer-support/
-- HR & Training: https://okiru.biz/category/hr-and-training/
-- Legal & Compliance: https://okiru.biz/category/legal-and-compliance/
-- Okiru Solutions: https://okiru.biz/category/okiru-solutions/
+- Content & Marketing: https://www.okiru.biz/category/content-and-marketing/
+- AI Assistants: https://www.okiru.biz/category/ai-assistants/
+- Developer Tools: https://www.okiru.biz/category/developer-tools/
+- Image Generation: https://www.okiru.biz/category/image-generation/
+- Video Generation: https://www.okiru.biz/category/video-generation/
+- Audio & Voice: https://www.okiru.biz/category/audio-and-voice/
+- Automation: https://www.okiru.biz/category/automation/
+- Sales & CRM: https://www.okiru.biz/category/sales-and-crm/
+- Data & Analytics: https://www.okiru.biz/category/data-and-analytics/
+- Meetings & Productivity: https://www.okiru.biz/category/meetings-and-productivity/
+- Customer Support: https://www.okiru.biz/category/customer-support/
+- HR & Training: https://www.okiru.biz/category/hr-and-training/
+- Legal & Compliance: https://www.okiru.biz/category/legal-and-compliance/
+- Okiru Solutions: https://www.okiru.biz/category/okiru-solutions/
 
 ## About Okiru
 
 Okiru Consulting helps organisations across South Africa and Africa build AI strategies, custom chatbots, document intelligence systems, workflow automation, and AI team training. Registered company: Okiru (Pty) Ltd, Reg. No. 2023/597303/07.
 
 - Company site: https://www.okiru.co.za
-- Tool advisor: https://okiru.biz
+- Tool advisor: https://www.okiru.biz
 - Developer tools: https://www.okiru.dev
 
 ## Content licensing
