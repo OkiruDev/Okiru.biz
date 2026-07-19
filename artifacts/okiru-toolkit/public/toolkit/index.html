@@ -4126,9 +4126,10 @@ const TOOL_VIDEOS={
 };
 
 /* ── FEATURED TOOL ROTATION ──
-   Rotates weekly (ISO week, UTC) across tools with active referral links.
-   Same week = same tool for every visitor. Add new entries here as new
-   referral partners go live. */
+   The single big "Featured Tool" tile picks a fresh random entry on every
+   page load. The home-page 3-up picks (renderHomeDiscover) still use the
+   weekly ISO-week rotation below so that row stays stable within a session.
+   Add new entries here as new referral partners go live. */
 const FEATURED_ROTATION=[
   {
     name:"Open Claw",
@@ -4258,7 +4259,11 @@ function getCurrentWeekLabel(){
   const week=Math.ceil(((d-yearStart)/86400000+1)/7);
   return `Week ${week} · ${d.getUTCFullYear()}`;
 }
-const FEATURED=Object.assign({},FEATURED_ROTATION[getFeaturedRotationIndex()],{updatedLabel:getCurrentWeekLabel()});
+/* Random pick, freshly rolled on every page load (not tied to the week). */
+function getRandomFeaturedIndex(){
+  return Math.floor(Math.random()*FEATURED_ROTATION.length);
+}
+const FEATURED=Object.assign({},FEATURED_ROTATION[getRandomFeaturedIndex()],{updatedLabel:getCurrentWeekLabel()});
 
 function renderFeatured(){
   const f=FEATURED;
@@ -4270,7 +4275,7 @@ function renderFeatured(){
     <div style="flex:1;min-width:220px">
       <div class="ft-badge-row">
         <span class="ft-badge featured">★ Featured Tool</span>
-        <span class="ft-badge month">Tool of the Week · ${f.updatedLabel}</span>
+        <span class="ft-badge month">Editor's Pick</span>
         <span class="ft-badge cat">${f.cat}</span>
       </div>
       <div class="ft-name">${f.name}</div>
