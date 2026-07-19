@@ -89,6 +89,22 @@ p{color:var(--g);margin-bottom:16px}
 .linklist{display:flex;flex-wrap:wrap;gap:10px 18px}
 .linklist a{color:var(--g);text-decoration:none;font-size:14.5px}
 .linklist a:hover{color:var(--cyan)}
+.data-table-wrap{overflow-x:auto;margin-top:8px;border:1px solid var(--line);border-radius:14px}
+.data-table{width:100%;border-collapse:collapse;font-size:14px;background:#0d0917}
+.data-table th,.data-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+.data-table td:last-child,.data-table th:last-child{white-space:normal}
+.data-table th{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--g2);background:#100b1a}
+.data-table td{color:var(--g)}
+.data-table td a{color:#eef2f7;font-weight:600;text-decoration:none}
+.data-table td a:hover{color:var(--cyan)}
+.data-table tbody tr:last-child td{border-bottom:none}
+.data-table tbody tr:hover{background:rgba(255,255,255,.03)}
+.facts-table{width:100%;border-collapse:collapse;font-size:14.5px}
+.facts-table th{width:130px;text-align:left;color:var(--g2);font-weight:600;font-size:12.5px;letter-spacing:.03em;padding:12px 16px;vertical-align:top}
+.facts-table td{padding:12px 16px 12px 0;color:var(--g);border-bottom:1px solid var(--line)}
+.facts-table td a{color:var(--cyan);text-decoration:none}
+.facts-table td a:hover{text-decoration:underline}
+.facts-table tr:last-child td,.facts-table tr:last-child th{border-bottom:none}
 footer{position:relative;z-index:1;border-top:1px solid var(--line);margin-top:64px;padding:34px 24px}
 footer .wrap{display:flex;flex-direction:column;gap:14px}
 .foot-links{display:flex;flex-wrap:wrap;gap:8px 20px}
@@ -157,6 +173,16 @@ details.faq-item summary:hover{background:#0d0917}
   <a class="btn btn-ghost" href="https://www.coursebox.ai" target="_blank" rel="noopener nofollow">Visit Coursebox AI Tutor ↗</a>
 </div>
 <div class="taglist"><span class="tag">tutor</span><span class="tag">chatbot</span><span class="tag">learning</span></div>
+<div class="data-table-wrap">
+  <table class="facts-table">
+    <tbody>
+      <tr><th scope="row">Category</th><td><a href="/category/hr-and-training/">HR &amp; Training</a></td></tr>
+      <tr><th scope="row">Pricing</th><td>Free plan available</td></tr>
+      <tr><th scope="row">Reliability</th><td>Medium reliability</td></tr>
+      <tr><th scope="row">Website</th><td><a href="https://www.coursebox.ai" target="_blank" rel="noopener nofollow">www.coursebox.ai</a></td></tr>
+    </tbody>
+  </table>
+</div>
 <section>
   <h2>What is Coursebox AI Tutor?</h2>
   <p>Coursebox AI Tutor is an AI tool in the <a href="/category/hr-and-training/" style="color:var(--cyan)">HR &amp; Training</a> category. AI tutor chatbot that guides learners through course material. It is rated <strong>Medium reliability</strong> and is <strong>Free plan available</strong>.</p>
@@ -171,52 +197,66 @@ details.faq-item summary:hover{background:#0d0917}
 
 <section>
   <h2>HR &amp; Training alternatives to Coursebox AI Tutor</h2>
-  <div class="grid">
-    <a class="card" href="/tools/ai-flashcard-maker/">
-      <div class="card-name">AI Flashcard Maker</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">Turns notes, PDFs, and topics into study flashcards automatically.</div>
-    </a>
-    <a class="card" href="/tools/biread/">
-      <div class="card-name">Biread</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">AI reading assistant that summarises and explains books and documents.</div>
-    </a>
-    <a class="card" href="/tools/chance-ai/">
-      <div class="card-name">Chance AI</div>
-      <div class="card-meta">Free · Medium</div>
-      <div class="card-desc">Visual AI app that recognises objects and teaches you about them.</div>
-    </a>
-    <a class="card" href="/tools/coursebox-ai/">
-      <div class="card-name">Coursebox AI</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">Builds online courses, quizzes, and assessments with AI in minutes.</div>
-    </a>
-    <a class="card" href="/tools/det-practice/">
-      <div class="card-name">DET Practice</div>
-      <div class="card-meta">Paid · Medium</div>
-      <div class="card-desc">AI practice platform for the Duolingo English Test with mock exams.</div>
-    </a>
-    <a class="card" href="/tools/do-it-free/">
-      <div class="card-name">Do It Free</div>
-      <div class="card-meta">Free · Medium</div>
-      <div class="card-desc">Free AI learning tools and resources for students.</div>
-    </a>
-    <a class="card" href="/tools/heights-ai/">
-      <div class="card-name">HEIGHTS AI</div>
-      <div class="card-meta">Paid · Medium</div>
-      <div class="card-desc">AI platform for course creators to build and grow education businesses.</div>
-    </a>
-    <a class="card" href="/tools/interviewspark/">
-      <div class="card-name">InterviewSpark</div>
-      <div class="card-meta">Paid · Medium</div>
-      <div class="card-desc">AI-powered interview practice with real-time feedback and coaching.</div>
-    </a>
-    <a class="card" href="/tools/ispring-cloud-ai/">
-      <div class="card-name">iSpring Cloud AI</div>
-      <div class="card-meta">Paid · Medium</div>
-      <div class="card-desc">AI-assisted e-learning authoring and course hosting platform.</div>
-    </a>
+  <div class="data-table-wrap">
+    <table class="data-table">
+      <thead><tr><th>Tool</th><th>Price</th><th>Reliability</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href="/tools/ai-flashcard-maker/">AI Flashcard Maker</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>Turns notes, PDFs, and topics into study flashcards automatically.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/biread/">Biread</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>AI reading assistant that summarises and explains books and documents.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/chance-ai/">Chance AI</a></td>
+          <td>Free</td>
+          <td>Medium</td>
+          <td>Visual AI app that recognises objects and teaches you about them.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/coursebox-ai/">Coursebox AI</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>Builds online courses, quizzes, and assessments with AI in minutes.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/det-practice/">DET Practice</a></td>
+          <td>Paid</td>
+          <td>Medium</td>
+          <td>AI practice platform for the Duolingo English Test with mock exams.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/do-it-free/">Do It Free</a></td>
+          <td>Free</td>
+          <td>Medium</td>
+          <td>Free AI learning tools and resources for students.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/heights-ai/">HEIGHTS AI</a></td>
+          <td>Paid</td>
+          <td>Medium</td>
+          <td>AI platform for course creators to build and grow education businesses.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/interviewspark/">InterviewSpark</a></td>
+          <td>Paid</td>
+          <td>Medium</td>
+          <td>AI-powered interview practice with real-time feedback and coaching.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/ispring-cloud-ai/">iSpring Cloud AI</a></td>
+          <td>Paid</td>
+          <td>Medium</td>
+          <td>AI-assisted e-learning authoring and course hosting platform.</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>
 <section>

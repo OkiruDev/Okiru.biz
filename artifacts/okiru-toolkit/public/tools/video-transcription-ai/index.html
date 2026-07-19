@@ -89,6 +89,22 @@ p{color:var(--g);margin-bottom:16px}
 .linklist{display:flex;flex-wrap:wrap;gap:10px 18px}
 .linklist a{color:var(--g);text-decoration:none;font-size:14.5px}
 .linklist a:hover{color:var(--cyan)}
+.data-table-wrap{overflow-x:auto;margin-top:8px;border:1px solid var(--line);border-radius:14px}
+.data-table{width:100%;border-collapse:collapse;font-size:14px;background:#0d0917}
+.data-table th,.data-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+.data-table td:last-child,.data-table th:last-child{white-space:normal}
+.data-table th{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--g2);background:#100b1a}
+.data-table td{color:var(--g)}
+.data-table td a{color:#eef2f7;font-weight:600;text-decoration:none}
+.data-table td a:hover{color:var(--cyan)}
+.data-table tbody tr:last-child td{border-bottom:none}
+.data-table tbody tr:hover{background:rgba(255,255,255,.03)}
+.facts-table{width:100%;border-collapse:collapse;font-size:14.5px}
+.facts-table th{width:130px;text-align:left;color:var(--g2);font-weight:600;font-size:12.5px;letter-spacing:.03em;padding:12px 16px;vertical-align:top}
+.facts-table td{padding:12px 16px 12px 0;color:var(--g);border-bottom:1px solid var(--line)}
+.facts-table td a{color:var(--cyan);text-decoration:none}
+.facts-table td a:hover{text-decoration:underline}
+.facts-table tr:last-child td,.facts-table tr:last-child th{border-bottom:none}
 footer{position:relative;z-index:1;border-top:1px solid var(--line);margin-top:64px;padding:34px 24px}
 footer .wrap{display:flex;flex-direction:column;gap:14px}
 .foot-links{display:flex;flex-wrap:wrap;gap:8px 20px}
@@ -157,6 +173,16 @@ details.faq-item summary:hover{background:#0d0917}
   <a class="btn btn-ghost" href="https://videotranscription.ai/" target="_blank" rel="noopener nofollow">Visit Video Transcription AI ↗</a>
 </div>
 <div class="taglist"><span class="tag">transcription</span><span class="tag">subtitles</span><span class="tag">video</span></div>
+<div class="data-table-wrap">
+  <table class="facts-table">
+    <tbody>
+      <tr><th scope="row">Category</th><td><a href="/category/meetings-and-productivity/">Meetings &amp; Productivity</a></td></tr>
+      <tr><th scope="row">Pricing</th><td>Free</td></tr>
+      <tr><th scope="row">Reliability</th><td>Medium reliability</td></tr>
+      <tr><th scope="row">Website</th><td><a href="https://videotranscription.ai/" target="_blank" rel="noopener nofollow">videotranscription.ai/</a></td></tr>
+    </tbody>
+  </table>
+</div>
 <section>
   <h2>What is Video Transcription AI?</h2>
   <p>Video Transcription AI is an AI tool in the <a href="/category/meetings-and-productivity/" style="color:var(--cyan)">Meetings &amp; Productivity</a> category. Converts uploaded videos and public links into transcripts, subtitles, summaries, and translations without an account. It is rated <strong>Medium reliability</strong> and is <strong>Free</strong>.</p>
@@ -171,52 +197,66 @@ details.faq-item summary:hover{background:#0d0917}
 
 <section>
   <h2>Meetings &amp; Productivity alternatives to Video Transcription AI</h2>
-  <div class="grid">
-    <a class="card" href="/tools/ai-video-summarizer/">
-      <div class="card-name">AI Video Summarizer</div>
-      <div class="card-meta">Free · Medium</div>
-      <div class="card-desc">Summarises long videos into key points and transcripts in seconds.</div>
-    </a>
-    <a class="card" href="/tools/beforesunset-ai/">
-      <div class="card-name">BeforeSunset AI</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">AI daily planner that turns your to-dos into a time-blocked schedule.</div>
-    </a>
-    <a class="card" href="/tools/diagrimo/">
-      <div class="card-name">Diagrimo</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">Creates diagrams, flowcharts, and presentations from text with AI.</div>
-    </a>
-    <a class="card" href="/tools/gitmind/">
-      <div class="card-name">GitMind</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">AI mind-mapping and brainstorming tool for notes and diagrams.</div>
-    </a>
-    <a class="card" href="/tools/gpt-for-work/">
-      <div class="card-name">GPT for Work</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">Brings ChatGPT and Claude into Google Sheets and Docs for bulk tasks.</div>
-    </a>
-    <a class="card" href="/tools/guideless/">
-      <div class="card-name">Guideless</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">Creates step-by-step product guides and walkthrough videos automatically.</div>
-    </a>
-    <a class="card" href="/tools/hynote/">
-      <div class="card-name">HyNote</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">AI note-taker that records, transcribes, and summarises meetings and lectures.</div>
-    </a>
-    <a class="card" href="/tools/i10x/">
-      <div class="card-name">i10x</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">AI productivity assistant that automates document and data tasks.</div>
-    </a>
-    <a class="card" href="/tools/liminary/">
-      <div class="card-name">Liminary</div>
-      <div class="card-meta">Free · Medium</div>
-      <div class="card-desc">AI workspace that automates research and turns notes into insights.</div>
-    </a>
+  <div class="data-table-wrap">
+    <table class="data-table">
+      <thead><tr><th>Tool</th><th>Price</th><th>Reliability</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href="/tools/ai-video-summarizer/">AI Video Summarizer</a></td>
+          <td>Free</td>
+          <td>Medium</td>
+          <td>Summarises long videos into key points and transcripts in seconds.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/beforesunset-ai/">BeforeSunset AI</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>AI daily planner that turns your to-dos into a time-blocked schedule.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/diagrimo/">Diagrimo</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>Creates diagrams, flowcharts, and presentations from text with AI.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/gitmind/">GitMind</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>AI mind-mapping and brainstorming tool for notes and diagrams.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/gpt-for-work/">GPT for Work</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>Brings ChatGPT and Claude into Google Sheets and Docs for bulk tasks.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/guideless/">Guideless</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>Creates step-by-step product guides and walkthrough videos automatically.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/hynote/">HyNote</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>AI note-taker that records, transcribes, and summarises meetings and lectures.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/i10x/">i10x</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>AI productivity assistant that automates document and data tasks.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/liminary/">Liminary</a></td>
+          <td>Free</td>
+          <td>Medium</td>
+          <td>AI workspace that automates research and turns notes into insights.</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>
 <section>

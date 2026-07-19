@@ -89,6 +89,22 @@ p{color:var(--g);margin-bottom:16px}
 .linklist{display:flex;flex-wrap:wrap;gap:10px 18px}
 .linklist a{color:var(--g);text-decoration:none;font-size:14.5px}
 .linklist a:hover{color:var(--cyan)}
+.data-table-wrap{overflow-x:auto;margin-top:8px;border:1px solid var(--line);border-radius:14px}
+.data-table{width:100%;border-collapse:collapse;font-size:14px;background:#0d0917}
+.data-table th,.data-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+.data-table td:last-child,.data-table th:last-child{white-space:normal}
+.data-table th{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--g2);background:#100b1a}
+.data-table td{color:var(--g)}
+.data-table td a{color:#eef2f7;font-weight:600;text-decoration:none}
+.data-table td a:hover{color:var(--cyan)}
+.data-table tbody tr:last-child td{border-bottom:none}
+.data-table tbody tr:hover{background:rgba(255,255,255,.03)}
+.facts-table{width:100%;border-collapse:collapse;font-size:14.5px}
+.facts-table th{width:130px;text-align:left;color:var(--g2);font-weight:600;font-size:12.5px;letter-spacing:.03em;padding:12px 16px;vertical-align:top}
+.facts-table td{padding:12px 16px 12px 0;color:var(--g);border-bottom:1px solid var(--line)}
+.facts-table td a{color:var(--cyan);text-decoration:none}
+.facts-table td a:hover{text-decoration:underline}
+.facts-table tr:last-child td,.facts-table tr:last-child th{border-bottom:none}
 footer{position:relative;z-index:1;border-top:1px solid var(--line);margin-top:64px;padding:34px 24px}
 footer .wrap{display:flex;flex-direction:column;gap:14px}
 .foot-links{display:flex;flex-wrap:wrap;gap:8px 20px}
@@ -157,6 +173,16 @@ details.faq-item summary:hover{background:#0d0917}
   <a class="btn btn-ghost" href="https://teamai.com/" target="_blank" rel="noopener nofollow">Visit TeamAI ↗</a>
 </div>
 <div class="taglist"><span class="tag">team</span><span class="tag">models</span><span class="tag">workspace</span></div>
+<div class="data-table-wrap">
+  <table class="facts-table">
+    <tbody>
+      <tr><th scope="row">Category</th><td><a href="/category/ai-assistants/">AI Assistants</a></td></tr>
+      <tr><th scope="row">Pricing</th><td>Paid</td></tr>
+      <tr><th scope="row">Reliability</th><td>Medium reliability</td></tr>
+      <tr><th scope="row">Website</th><td><a href="https://teamai.com/" target="_blank" rel="noopener nofollow">teamai.com/</a></td></tr>
+    </tbody>
+  </table>
+</div>
 <section>
   <h2>What is TeamAI?</h2>
   <p>TeamAI is an AI tool in the <a href="/category/ai-assistants/" style="color:var(--cyan)">AI Assistants</a> category. Gives teams shared access to multiple AI models, knowledge bases, custom agents, and prompt libraries. It is rated <strong>Medium reliability</strong> and is <strong>Paid</strong>.</p>
@@ -171,52 +197,66 @@ details.faq-item summary:hover{background:#0d0917}
 
 <section>
   <h2>AI Assistants alternatives to TeamAI</h2>
-  <div class="grid">
-    <a class="card" href="/tools/askyura/">
-      <div class="card-name">AskYura</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">Conversational AI agent that answers questions and automates everyday tasks.</div>
-    </a>
-    <a class="card" href="/tools/friend2chat/">
-      <div class="card-name">Friend2Chat</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">AI companion chatbot for casual conversation and roleplay.</div>
-    </a>
-    <a class="card" href="/tools/genspark/">
-      <div class="card-name">Genspark</div>
-      <div class="card-meta">Freemium · High</div>
-      <div class="card-desc">AI agent and search engine that builds custom pages and completes tasks.</div>
-    </a>
-    <a class="card" href="/tools/globalgpt/">
-      <div class="card-name">GlobalGPT</div>
-      <div class="card-meta">Paid · Medium</div>
-      <div class="card-desc">One subscription to access many AI models for chat, art, and video.</div>
-    </a>
-    <a class="card" href="/tools/literaliq/">
-      <div class="card-name">LiteralIQ</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">AI chat assistant for productivity and quick answers.</div>
-    </a>
-    <a class="card" href="/tools/mulerun/">
-      <div class="card-name">MuleRun</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">Marketplace of AI agents that complete tasks on demand.</div>
-    </a>
-    <a class="card" href="/tools/sista-ai/">
-      <div class="card-name">Sista AI</div>
-      <div class="card-meta">Paid · Medium</div>
-      <div class="card-desc">Voice AI agent that adds a talking assistant to apps and websites.</div>
-    </a>
-    <a class="card" href="/tools/claude/">
-      <div class="card-name">Claude</div>
-      <div class="card-meta">Freemium · High</div>
-      <div class="card-desc">Anthropic's AI for writing, analysis, coding, and research with strong safety focus.</div>
-    </a>
-    <a class="card" href="/tools/chatgpt/">
-      <div class="card-name">ChatGPT</div>
-      <div class="card-meta">Freemium · High</div>
-      <div class="card-desc">OpenAI's flagship conversational AI for content creation, Q&amp;A, and task automation.</div>
-    </a>
+  <div class="data-table-wrap">
+    <table class="data-table">
+      <thead><tr><th>Tool</th><th>Price</th><th>Reliability</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href="/tools/askyura/">AskYura</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>Conversational AI agent that answers questions and automates everyday tasks.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/friend2chat/">Friend2Chat</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>AI companion chatbot for casual conversation and roleplay.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/genspark/">Genspark</a></td>
+          <td>Freemium</td>
+          <td>High</td>
+          <td>AI agent and search engine that builds custom pages and completes tasks.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/globalgpt/">GlobalGPT</a></td>
+          <td>Paid</td>
+          <td>Medium</td>
+          <td>One subscription to access many AI models for chat, art, and video.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/literaliq/">LiteralIQ</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>AI chat assistant for productivity and quick answers.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/mulerun/">MuleRun</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>Marketplace of AI agents that complete tasks on demand.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/sista-ai/">Sista AI</a></td>
+          <td>Paid</td>
+          <td>Medium</td>
+          <td>Voice AI agent that adds a talking assistant to apps and websites.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/claude/">Claude</a></td>
+          <td>Freemium</td>
+          <td>High</td>
+          <td>Anthropic's AI for writing, analysis, coding, and research with strong safety focus.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/chatgpt/">ChatGPT</a></td>
+          <td>Freemium</td>
+          <td>High</td>
+          <td>OpenAI's flagship conversational AI for content creation, Q&amp;A, and task automation.</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>
 <section>

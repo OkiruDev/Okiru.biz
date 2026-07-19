@@ -89,6 +89,22 @@ p{color:var(--g);margin-bottom:16px}
 .linklist{display:flex;flex-wrap:wrap;gap:10px 18px}
 .linklist a{color:var(--g);text-decoration:none;font-size:14.5px}
 .linklist a:hover{color:var(--cyan)}
+.data-table-wrap{overflow-x:auto;margin-top:8px;border:1px solid var(--line);border-radius:14px}
+.data-table{width:100%;border-collapse:collapse;font-size:14px;background:#0d0917}
+.data-table th,.data-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+.data-table td:last-child,.data-table th:last-child{white-space:normal}
+.data-table th{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--g2);background:#100b1a}
+.data-table td{color:var(--g)}
+.data-table td a{color:#eef2f7;font-weight:600;text-decoration:none}
+.data-table td a:hover{color:var(--cyan)}
+.data-table tbody tr:last-child td{border-bottom:none}
+.data-table tbody tr:hover{background:rgba(255,255,255,.03)}
+.facts-table{width:100%;border-collapse:collapse;font-size:14.5px}
+.facts-table th{width:130px;text-align:left;color:var(--g2);font-weight:600;font-size:12.5px;letter-spacing:.03em;padding:12px 16px;vertical-align:top}
+.facts-table td{padding:12px 16px 12px 0;color:var(--g);border-bottom:1px solid var(--line)}
+.facts-table td a{color:var(--cyan);text-decoration:none}
+.facts-table td a:hover{text-decoration:underline}
+.facts-table tr:last-child td,.facts-table tr:last-child th{border-bottom:none}
 footer{position:relative;z-index:1;border-top:1px solid var(--line);margin-top:64px;padding:34px 24px}
 footer .wrap{display:flex;flex-direction:column;gap:14px}
 .foot-links{display:flex;flex-wrap:wrap;gap:8px 20px}
@@ -157,6 +173,16 @@ details.faq-item summary:hover{background:#0d0917}
   <a class="btn btn-ghost" href="https://syntopia.ai" target="_blank" rel="noopener nofollow">Visit Syntopia ↗</a>
 </div>
 <div class="taglist"><span class="tag">video</span><span class="tag">marketing</span><span class="tag">social</span></div>
+<div class="data-table-wrap">
+  <table class="facts-table">
+    <tbody>
+      <tr><th scope="row">Category</th><td><a href="/category/video-generation/">Video Generation</a></td></tr>
+      <tr><th scope="row">Pricing</th><td>Free plan available</td></tr>
+      <tr><th scope="row">Reliability</th><td>Medium reliability</td></tr>
+      <tr><th scope="row">Website</th><td><a href="https://syntopia.ai" target="_blank" rel="noopener nofollow">syntopia.ai</a></td></tr>
+    </tbody>
+  </table>
+</div>
 <section>
   <h2>What is Syntopia?</h2>
   <p>Syntopia is an AI tool in the <a href="/category/video-generation/" style="color:var(--cyan)">Video Generation</a> category. Generates AI marketing videos for social media. It is rated <strong>Medium reliability</strong> and is <strong>Free plan available</strong>.</p>
@@ -171,52 +197,66 @@ details.faq-item summary:hover{background:#0d0917}
 
 <section>
   <h2>Video Generation alternatives to Syntopia</h2>
-  <div class="grid">
-    <a class="card" href="/tools/akool-ai/">
-      <div class="card-name">Akool AI</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">Generative video platform for avatars, face swap, and talking-photo content.</div>
-    </a>
-    <a class="card" href="/tools/artlist/">
-      <div class="card-name">Artlist</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">Royalty-free music, footage, and AI creative tools for video creators.</div>
-    </a>
-    <a class="card" href="/tools/clideo/">
-      <div class="card-name">Clideo</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">Online video editor to cut, merge, subtitle, and translate clips.</div>
-    </a>
-    <a class="card" href="/tools/clipbuddy/">
-      <div class="card-name">ClipBuddy</div>
-      <div class="card-meta">Paid · Medium</div>
-      <div class="card-desc">AI clips long videos into viral short-form highlights automatically.</div>
-    </a>
-    <a class="card" href="/tools/cloneviral/">
-      <div class="card-name">CloneViral</div>
-      <div class="card-meta">Paid · Medium</div>
-      <div class="card-desc">Recreates viral short-video formats with AI avatars and voiceovers.</div>
-    </a>
-    <a class="card" href="/tools/creatok/">
-      <div class="card-name">CreatOK</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">Generates TikTok-style UGC ad videos with AI avatars.</div>
-    </a>
-    <a class="card" href="/tools/eddie-ai/">
-      <div class="card-name">Eddie AI</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">AI video editor that assembles edits from raw footage via chat.</div>
-    </a>
-    <a class="card" href="/tools/fliki-ai/">
-      <div class="card-name">Fliki AI</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">Turns scripts and blog posts into videos with lifelike AI voices.</div>
-    </a>
-    <a class="card" href="/tools/gling/">
-      <div class="card-name">Gling</div>
-      <div class="card-meta">Paid · Medium</div>
-      <div class="card-desc">Automatically cuts silences and bad takes from video for creators.</div>
-    </a>
+  <div class="data-table-wrap">
+    <table class="data-table">
+      <thead><tr><th>Tool</th><th>Price</th><th>Reliability</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href="/tools/akool-ai/">Akool AI</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>Generative video platform for avatars, face swap, and talking-photo content.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/artlist/">Artlist</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>Royalty-free music, footage, and AI creative tools for video creators.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/clideo/">Clideo</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>Online video editor to cut, merge, subtitle, and translate clips.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/clipbuddy/">ClipBuddy</a></td>
+          <td>Paid</td>
+          <td>Medium</td>
+          <td>AI clips long videos into viral short-form highlights automatically.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/cloneviral/">CloneViral</a></td>
+          <td>Paid</td>
+          <td>Medium</td>
+          <td>Recreates viral short-video formats with AI avatars and voiceovers.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/creatok/">CreatOK</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>Generates TikTok-style UGC ad videos with AI avatars.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/eddie-ai/">Eddie AI</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>AI video editor that assembles edits from raw footage via chat.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/fliki-ai/">Fliki AI</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>Turns scripts and blog posts into videos with lifelike AI voices.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/gling/">Gling</a></td>
+          <td>Paid</td>
+          <td>Medium</td>
+          <td>Automatically cuts silences and bad takes from video for creators.</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>
 <section>

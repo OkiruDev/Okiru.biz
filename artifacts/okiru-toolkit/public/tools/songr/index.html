@@ -89,6 +89,22 @@ p{color:var(--g);margin-bottom:16px}
 .linklist{display:flex;flex-wrap:wrap;gap:10px 18px}
 .linklist a{color:var(--g);text-decoration:none;font-size:14.5px}
 .linklist a:hover{color:var(--cyan)}
+.data-table-wrap{overflow-x:auto;margin-top:8px;border:1px solid var(--line);border-radius:14px}
+.data-table{width:100%;border-collapse:collapse;font-size:14px;background:#0d0917}
+.data-table th,.data-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+.data-table td:last-child,.data-table th:last-child{white-space:normal}
+.data-table th{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--g2);background:#100b1a}
+.data-table td{color:var(--g)}
+.data-table td a{color:#eef2f7;font-weight:600;text-decoration:none}
+.data-table td a:hover{color:var(--cyan)}
+.data-table tbody tr:last-child td{border-bottom:none}
+.data-table tbody tr:hover{background:rgba(255,255,255,.03)}
+.facts-table{width:100%;border-collapse:collapse;font-size:14.5px}
+.facts-table th{width:130px;text-align:left;color:var(--g2);font-weight:600;font-size:12.5px;letter-spacing:.03em;padding:12px 16px;vertical-align:top}
+.facts-table td{padding:12px 16px 12px 0;color:var(--g);border-bottom:1px solid var(--line)}
+.facts-table td a{color:var(--cyan);text-decoration:none}
+.facts-table td a:hover{text-decoration:underline}
+.facts-table tr:last-child td,.facts-table tr:last-child th{border-bottom:none}
 footer{position:relative;z-index:1;border-top:1px solid var(--line);margin-top:64px;padding:34px 24px}
 footer .wrap{display:flex;flex-direction:column;gap:14px}
 .foot-links{display:flex;flex-wrap:wrap;gap:8px 20px}
@@ -157,6 +173,16 @@ details.faq-item summary:hover{background:#0d0917}
   <a class="btn btn-ghost" href="https://www.songr.ai" target="_blank" rel="noopener nofollow">Visit SongR ↗</a>
 </div>
 <div class="taglist"><span class="tag">music</span><span class="tag">songs</span><span class="tag">quick</span></div>
+<div class="data-table-wrap">
+  <table class="facts-table">
+    <tbody>
+      <tr><th scope="row">Category</th><td><a href="/category/audio-and-voice/">Audio &amp; Voice</a></td></tr>
+      <tr><th scope="row">Pricing</th><td>Free plan available</td></tr>
+      <tr><th scope="row">Reliability</th><td>Medium reliability</td></tr>
+      <tr><th scope="row">Website</th><td><a href="https://www.songr.ai" target="_blank" rel="noopener nofollow">www.songr.ai</a></td></tr>
+    </tbody>
+  </table>
+</div>
 <section>
   <h2>What is SongR?</h2>
   <p>SongR is an AI tool in the <a href="/category/audio-and-voice/" style="color:var(--cyan)">Audio &amp; Voice</a> category. Creates short AI-generated songs from a few words. It is rated <strong>Medium reliability</strong> and is <strong>Free plan available</strong>.</p>
@@ -171,52 +197,66 @@ details.faq-item summary:hover{background:#0d0917}
 
 <section>
   <h2>Audio &amp; Voice alternatives to SongR</h2>
-  <div class="grid">
-    <a class="card" href="/tools/ai-song-creator/">
-      <div class="card-name">AI Song Creator</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">Creates original songs with vocals and instrumentals from a text prompt.</div>
-    </a>
-    <a class="card" href="/tools/deciphr/">
-      <div class="card-name">Deciphr</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">Turns podcasts and audio into transcripts, show notes, and clips.</div>
-    </a>
-    <a class="card" href="/tools/hooksounds-ai-studio/">
-      <div class="card-name">HookSounds AI Studio</div>
-      <div class="card-meta">Paid · Medium</div>
-      <div class="card-desc">Royalty-free music library with an AI studio for custom tracks.</div>
-    </a>
-    <a class="card" href="/tools/lalals/">
-      <div class="card-name">Lalals</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">AI voice cloning and music covers with realistic artist voices.</div>
-    </a>
-    <a class="card" href="/tools/landr/">
-      <div class="card-name">Landr</div>
-      <div class="card-meta">Paid · Medium</div>
-      <div class="card-desc">AI audio mastering, distribution, and music creation platform.</div>
-    </a>
-    <a class="card" href="/tools/mubert/">
-      <div class="card-name">Mubert</div>
-      <div class="card-meta">Paid · Medium</div>
-      <div class="card-desc">Generative royalty-free music for content, apps, and streaming.</div>
-    </a>
-    <a class="card" href="/tools/mureka-ai/">
-      <div class="card-name">Mureka AI</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">AI music generator that composes songs and lyrics from prompts.</div>
-    </a>
-    <a class="card" href="/tools/palabra-ai/">
-      <div class="card-name">Palabra.ai</div>
-      <div class="card-meta">Paid · Medium</div>
-      <div class="card-desc">Real-time AI speech translation and voice dubbing across languages.</div>
-    </a>
-    <a class="card" href="/tools/singify/">
-      <div class="card-name">Singify</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">AI that creates songs and music covers from text or voice.</div>
-    </a>
+  <div class="data-table-wrap">
+    <table class="data-table">
+      <thead><tr><th>Tool</th><th>Price</th><th>Reliability</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href="/tools/ai-song-creator/">AI Song Creator</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>Creates original songs with vocals and instrumentals from a text prompt.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/deciphr/">Deciphr</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>Turns podcasts and audio into transcripts, show notes, and clips.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/hooksounds-ai-studio/">HookSounds AI Studio</a></td>
+          <td>Paid</td>
+          <td>Medium</td>
+          <td>Royalty-free music library with an AI studio for custom tracks.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/lalals/">Lalals</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>AI voice cloning and music covers with realistic artist voices.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/landr/">Landr</a></td>
+          <td>Paid</td>
+          <td>Medium</td>
+          <td>AI audio mastering, distribution, and music creation platform.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/mubert/">Mubert</a></td>
+          <td>Paid</td>
+          <td>Medium</td>
+          <td>Generative royalty-free music for content, apps, and streaming.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/mureka-ai/">Mureka AI</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>AI music generator that composes songs and lyrics from prompts.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/palabra-ai/">Palabra.ai</a></td>
+          <td>Paid</td>
+          <td>Medium</td>
+          <td>Real-time AI speech translation and voice dubbing across languages.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/singify/">Singify</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>AI that creates songs and music covers from text or voice.</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>
 <section>

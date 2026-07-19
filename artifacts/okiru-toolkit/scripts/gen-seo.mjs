@@ -141,6 +141,22 @@ p{color:var(--g);margin-bottom:16px}
 .linklist{display:flex;flex-wrap:wrap;gap:10px 18px}
 .linklist a{color:var(--g);text-decoration:none;font-size:14.5px}
 .linklist a:hover{color:var(--cyan)}
+.data-table-wrap{overflow-x:auto;margin-top:8px;border:1px solid var(--line);border-radius:14px}
+.data-table{width:100%;border-collapse:collapse;font-size:14px;background:#0d0917}
+.data-table th,.data-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+.data-table td:last-child,.data-table th:last-child{white-space:normal}
+.data-table th{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--g2);background:#100b1a}
+.data-table td{color:var(--g)}
+.data-table td a{color:#eef2f7;font-weight:600;text-decoration:none}
+.data-table td a:hover{color:var(--cyan)}
+.data-table tbody tr:last-child td{border-bottom:none}
+.data-table tbody tr:hover{background:rgba(255,255,255,.03)}
+.facts-table{width:100%;border-collapse:collapse;font-size:14.5px}
+.facts-table th{width:130px;text-align:left;color:var(--g2);font-weight:600;font-size:12.5px;letter-spacing:.03em;padding:12px 16px;vertical-align:top}
+.facts-table td{padding:12px 16px 12px 0;color:var(--g);border-bottom:1px solid var(--line)}
+.facts-table td a{color:var(--cyan);text-decoration:none}
+.facts-table td a:hover{text-decoration:underline}
+.facts-table tr:last-child td,.facts-table tr:last-child th{border-bottom:none}
 footer{position:relative;z-index:1;border-top:1px solid var(--line);margin-top:64px;padding:34px 24px}
 footer .wrap{display:flex;flex-direction:column;gap:14px}
 .foot-links{display:flex;flex-wrap:wrap;gap:8px 20px}
@@ -457,6 +473,16 @@ function toolPage(t, categories, byCat, benefits) {
   <a class="btn btn-ghost" href="${esc(t.url)}" target="_blank" rel="noopener nofollow">Visit ${esc(t.name)} ↗</a>
 </div>
 ${t.tags && t.tags.length ? `<div class="taglist">${t.tags.map((g) => `<span class="tag">${esc(g)}</span>`).join("")}</div>` : ""}
+<div class="data-table-wrap">
+  <table class="facts-table">
+    <tbody>
+      <tr><th scope="row">Category</th><td><a href="/category/${cat.slug}/">${esc(t.cat)}</a></td></tr>
+      <tr><th scope="row">Pricing</th><td>${esc(PRICE_NOTE[t.price] || t.price)}</td></tr>
+      <tr><th scope="row">Reliability</th><td>${esc(REL_NOTE[t.rel] || t.rel)}</td></tr>
+      <tr><th scope="row">Website</th><td><a href="${esc(t.url)}" target="_blank" rel="noopener nofollow">${esc(t.url.replace(/^https?:\/\//, ""))}</a></td></tr>
+    </tbody>
+  </table>
+</div>
 <section>
   <h2>What is ${esc(t.name)}?</h2>
   <p>${esc(t.name)} is an AI tool in the <a href="/category/${cat.slug}/" style="color:var(--cyan)">${esc(t.cat)}</a> category. ${esc(t.desc)} It is rated <strong>${esc(REL_NOTE[t.rel] || t.rel)}</strong> and is <strong>${esc(PRICE_NOTE[t.price] || t.price)}</strong>.</p>
@@ -470,16 +496,22 @@ ${
   related.length
     ? `<section>
   <h2>${esc(t.cat)} alternatives to ${esc(t.name)}</h2>
-  <div class="grid">
-    ${related
-      .map(
-        (r) => `<a class="card" href="/tools/${r.slug}/">
-      <div class="card-name">${esc(r.name)}</div>
-      <div class="card-meta">${esc(r.price)} · ${esc(r.rel)}</div>
-      <div class="card-desc">${esc(r.desc.slice(0, 110))}${r.desc.length > 110 ? "…" : ""}</div>
-    </a>`
-      )
-      .join("\n    ")}
+  <div class="data-table-wrap">
+    <table class="data-table">
+      <thead><tr><th>Tool</th><th>Price</th><th>Reliability</th><th>Description</th></tr></thead>
+      <tbody>
+        ${related
+          .map(
+            (r) => `<tr>
+          <td><a href="/tools/${r.slug}/">${esc(r.name)}</a></td>
+          <td>${esc(r.price)}</td>
+          <td>${esc(r.rel)}</td>
+          <td>${esc(r.desc.slice(0, 110))}${r.desc.length > 110 ? "…" : ""}</td>
+        </tr>`
+          )
+          .join("\n        ")}
+      </tbody>
+    </table>
   </div>
 </section>`
     : ""
@@ -497,22 +529,34 @@ function blogPage(post, allPosts, categories) {
 
   const jsonld = JSON.stringify({
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: post.title,
-    description: post.excerpt || "",
-    datePublished: post.date,
-    url: canonical,
-    mainEntityOfPage: canonical,
-    author: { "@type": "Organization", name: post.author || "Okiru Consulting", url: "https://www.okiru.co.za" },
-    publisher: {
-      "@type": "Organization",
-      name: "Okiru Consulting",
-      url: "https://www.okiru.co.za",
-      logo: { "@type": "ImageObject", url: `${ORIGIN}/okiru-logo.png` },
-    },
-    keywords: (post.keywords || []).join(", "),
-    articleSection: post.tag || "AI",
-    image: post.cover || `${ORIGIN}/opengraph.jpg`,
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        headline: post.title,
+        description: post.excerpt || "",
+        datePublished: post.date,
+        url: canonical,
+        mainEntityOfPage: canonical,
+        author: { "@type": "Organization", name: post.author || "Okiru Consulting", url: "https://www.okiru.co.za" },
+        publisher: {
+          "@type": "Organization",
+          name: "Okiru Consulting",
+          url: "https://www.okiru.co.za",
+          logo: { "@type": "ImageObject", url: `${ORIGIN}/okiru-logo.png` },
+        },
+        keywords: (post.keywords || []).join(", "),
+        articleSection: post.tag || "AI",
+        image: post.cover || `${ORIGIN}/opengraph.jpg`,
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: `${ORIGIN}/` },
+          { "@type": "ListItem", position: 2, name: "Blog", item: `${ORIGIN}/blog/` },
+          { "@type": "ListItem", position: 3, name: post.title, item: canonical },
+        ],
+      },
+    ],
   });
 
   /* find prev/next posts (sorted by id desc, same order as blog grid) */
@@ -591,24 +635,35 @@ function blogIndexPage(posts, categories) {
 
   const jsonld = JSON.stringify({
     "@context": "https://schema.org",
-    "@type": "Blog",
-    name: "Okiru Blog",
-    url: canonical,
-    description,
-    publisher: {
-      "@type": "Organization",
-      name: "Okiru Consulting",
-      url: "https://www.okiru.co.za",
-      logo: { "@type": "ImageObject", url: `${ORIGIN}/okiru-logo.png` },
-    },
-    blogPost: sorted.map((p) => ({
-      "@type": "BlogPosting",
-      headline: p.title,
-      description: p.excerpt || "",
-      datePublished: p.date,
-      url: `${ORIGIN}/blog/${slugify(p.title)}/`,
-      author: { "@type": "Organization", name: p.author || "Okiru Consulting" },
-    })),
+    "@graph": [
+      {
+        "@type": "Blog",
+        name: "Okiru Blog",
+        url: canonical,
+        description,
+        publisher: {
+          "@type": "Organization",
+          name: "Okiru Consulting",
+          url: "https://www.okiru.co.za",
+          logo: { "@type": "ImageObject", url: `${ORIGIN}/okiru-logo.png` },
+        },
+        blogPost: sorted.map((p) => ({
+          "@type": "BlogPosting",
+          headline: p.title,
+          description: p.excerpt || "",
+          datePublished: p.date,
+          url: `${ORIGIN}/blog/${slugify(p.title)}/`,
+          author: { "@type": "Organization", name: p.author || "Okiru Consulting" },
+        })),
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: `${ORIGIN}/` },
+          { "@type": "ListItem", position: 2, name: "Blog", item: canonical },
+        ],
+      },
+    ],
   });
 
   const body = `
@@ -647,30 +702,48 @@ function categoryPage(cat, tools, categories) {
   const description = `Browse ${tools.length} ${cat.name} AI tools, with pricing and reliability ratings. Find the right one for your goal with the free Okiru AI Tool Advisor.`;
   const jsonld = JSON.stringify({
     "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: `${cat.name} AI Tools`,
-    numberOfItems: tools.length,
-    itemListElement: tools.map((t, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      url: `${ORIGIN}/tools/${t.slug}/`,
-      name: t.name,
-    })),
+    "@graph": [
+      {
+        "@type": "ItemList",
+        name: `${cat.name} AI Tools`,
+        numberOfItems: tools.length,
+        itemListElement: tools.map((t, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          url: `${ORIGIN}/tools/${t.slug}/`,
+          name: t.name,
+        })),
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: `${ORIGIN}/` },
+          { "@type": "ListItem", position: 2, name: "AI Tools", item: `${ORIGIN}/tools/` },
+          { "@type": "ListItem", position: 3, name: cat.name, item: canonical },
+        ],
+      },
+    ],
   });
   const body = `
 <div class="crumbs"><a href="/">Home</a> › <a href="/tools/">AI Tools</a> › <span>${esc(cat.name)}</span></div>
 <h1>${esc(cat.name)} AI Tools</h1>
 <p class="lede">${tools.length} ${esc(cat.name)} tools reviewed and rated. Click any tool for details, or use the <a href="${APP}" style="color:var(--cyan)">AI Advisor</a> to find the best fit for your goal.</p>
-<div class="grid">
-  ${tools
-    .map(
-      (t) => `<a class="card" href="/tools/${t.slug}/">
-    <div class="card-name">${esc(t.name)}${t.pick ? " ★" : ""}</div>
-    <div class="card-meta">${esc(t.price)} · ${esc(t.rel)} reliability</div>
-    <div class="card-desc">${esc(t.desc.slice(0, 120))}${t.desc.length > 120 ? "…" : ""}</div>
-  </a>`
-    )
-    .join("\n  ")}
+<div class="data-table-wrap">
+  <table class="data-table">
+    <thead><tr><th>Tool</th><th>Price</th><th>Reliability</th><th>Description</th></tr></thead>
+    <tbody>
+      ${tools
+        .map(
+          (t) => `<tr>
+        <td><a href="/tools/${t.slug}/">${esc(t.name)}${t.pick ? " ★" : ""}</a></td>
+        <td>${esc(t.price)}</td>
+        <td>${esc(t.rel)}</td>
+        <td>${esc(t.desc.slice(0, 120))}${t.desc.length > 120 ? "…" : ""}</td>
+      </tr>`
+        )
+        .join("\n      ")}
+    </tbody>
+  </table>
 </div>`;
   return page({ title, description, canonical, jsonld, body, categories });
 }
@@ -692,10 +765,21 @@ function hubPage(byCat, categories) {
   const description = `Browse all ${total} AI tools across ${categories.length} categories — assistants, developer tools, image, video, audio, automation and more. Each tool reviewed with pricing and reliability.`;
   const jsonld = JSON.stringify({
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    name: "All AI Tools",
-    url: canonical,
-    description,
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        name: "All AI Tools",
+        url: canonical,
+        description,
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: `${ORIGIN}/` },
+          { "@type": "ListItem", position: 2, name: "AI Tools", item: canonical },
+        ],
+      },
+    ],
   });
   const body = `
 <div class="crumbs"><a href="/">Home</a> › <span>AI Tools</span></div>

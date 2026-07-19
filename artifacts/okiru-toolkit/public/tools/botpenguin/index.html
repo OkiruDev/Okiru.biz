@@ -89,6 +89,22 @@ p{color:var(--g);margin-bottom:16px}
 .linklist{display:flex;flex-wrap:wrap;gap:10px 18px}
 .linklist a{color:var(--g);text-decoration:none;font-size:14.5px}
 .linklist a:hover{color:var(--cyan)}
+.data-table-wrap{overflow-x:auto;margin-top:8px;border:1px solid var(--line);border-radius:14px}
+.data-table{width:100%;border-collapse:collapse;font-size:14px;background:#0d0917}
+.data-table th,.data-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+.data-table td:last-child,.data-table th:last-child{white-space:normal}
+.data-table th{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--g2);background:#100b1a}
+.data-table td{color:var(--g)}
+.data-table td a{color:#eef2f7;font-weight:600;text-decoration:none}
+.data-table td a:hover{color:var(--cyan)}
+.data-table tbody tr:last-child td{border-bottom:none}
+.data-table tbody tr:hover{background:rgba(255,255,255,.03)}
+.facts-table{width:100%;border-collapse:collapse;font-size:14.5px}
+.facts-table th{width:130px;text-align:left;color:var(--g2);font-weight:600;font-size:12.5px;letter-spacing:.03em;padding:12px 16px;vertical-align:top}
+.facts-table td{padding:12px 16px 12px 0;color:var(--g);border-bottom:1px solid var(--line)}
+.facts-table td a{color:var(--cyan);text-decoration:none}
+.facts-table td a:hover{text-decoration:underline}
+.facts-table tr:last-child td,.facts-table tr:last-child th{border-bottom:none}
 footer{position:relative;z-index:1;border-top:1px solid var(--line);margin-top:64px;padding:34px 24px}
 footer .wrap{display:flex;flex-direction:column;gap:14px}
 .foot-links{display:flex;flex-wrap:wrap;gap:8px 20px}
@@ -157,6 +173,16 @@ details.faq-item summary:hover{background:#0d0917}
   <a class="btn btn-ghost" href="https://botpenguin.com" target="_blank" rel="noopener nofollow">Visit BotPenguin ↗</a>
 </div>
 <div class="taglist"><span class="tag">chatbot</span><span class="tag">whatsapp</span><span class="tag">support</span></div>
+<div class="data-table-wrap">
+  <table class="facts-table">
+    <tbody>
+      <tr><th scope="row">Category</th><td><a href="/category/customer-support/">Customer Support</a></td></tr>
+      <tr><th scope="row">Pricing</th><td>Free plan available</td></tr>
+      <tr><th scope="row">Reliability</th><td>Medium reliability</td></tr>
+      <tr><th scope="row">Website</th><td><a href="https://botpenguin.com" target="_blank" rel="noopener nofollow">botpenguin.com</a></td></tr>
+    </tbody>
+  </table>
+</div>
 <section>
   <h2>What is BotPenguin?</h2>
   <p>BotPenguin is an AI tool in the <a href="/category/customer-support/" style="color:var(--cyan)">Customer Support</a> category. No-code AI chatbot builder for WhatsApp, websites, and customer support. It is rated <strong>Medium reliability</strong> and is <strong>Free plan available</strong>.</p>
@@ -171,52 +197,66 @@ details.faq-item summary:hover{background:#0d0917}
 
 <section>
   <h2>Customer Support alternatives to BotPenguin</h2>
-  <div class="grid">
-    <a class="card" href="/tools/cosupport-ai/">
-      <div class="card-name">CoSupport AI</div>
-      <div class="card-meta">Paid · Medium</div>
-      <div class="card-desc">AI agents that handle customer-support tickets and assist support teams.</div>
-    </a>
-    <a class="card" href="/tools/helpcrunch/">
-      <div class="card-name">HelpCrunch</div>
-      <div class="card-meta">Paid · Medium</div>
-      <div class="card-desc">Customer-communication platform with AI chatbots and live chat.</div>
-    </a>
-    <a class="card" href="/tools/intercom-fin/">
-      <div class="card-name">Intercom Fin</div>
-      <div class="card-meta">Paid · High</div>
-      <div class="card-desc">AI customer support agent that resolves up to 50% of tickets autonomously.</div>
-    </a>
-    <a class="card" href="/tools/zendesk-ai/">
-      <div class="card-name">Zendesk AI</div>
-      <div class="card-meta">Paid · High</div>
-      <div class="card-desc">AI across Zendesk for auto-routing, intent detection, and agent assist.</div>
-    </a>
-    <a class="card" href="/tools/forethought/">
-      <div class="card-name">Forethought</div>
-      <div class="card-meta">Paid · Medium</div>
-      <div class="card-desc">AI support automation that predicts intent and surfaces knowledge to agents.</div>
-    </a>
-    <a class="card" href="/tools/tidio/">
-      <div class="card-name">Tidio</div>
-      <div class="card-meta">Freemium · High</div>
-      <div class="card-desc">SMB-focused chat platform with the Lyro AI Agent that handles routine queries and proactively captures leads.</div>
-    </a>
-    <a class="card" href="/tools/botpress/">
-      <div class="card-name">Botpress</div>
-      <div class="card-meta">Freemium · High</div>
-      <div class="card-desc">Developer-focused platform for building serious, highly customisable AI chatbots with full code control.</div>
-    </a>
-    <a class="card" href="/tools/pagergpt/">
-      <div class="card-name">PagerGPT</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">No-code AI agent builder trained on business data that takes real actions like bookings and refunds.</div>
-    </a>
-    <a class="card" href="/tools/solvea/">
-      <div class="card-name">Solvea</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">No-code AI receptionist that answers calls, emails, SMS, and live chats 24/7 for small businesses.</div>
-    </a>
+  <div class="data-table-wrap">
+    <table class="data-table">
+      <thead><tr><th>Tool</th><th>Price</th><th>Reliability</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href="/tools/cosupport-ai/">CoSupport AI</a></td>
+          <td>Paid</td>
+          <td>Medium</td>
+          <td>AI agents that handle customer-support tickets and assist support teams.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/helpcrunch/">HelpCrunch</a></td>
+          <td>Paid</td>
+          <td>Medium</td>
+          <td>Customer-communication platform with AI chatbots and live chat.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/intercom-fin/">Intercom Fin</a></td>
+          <td>Paid</td>
+          <td>High</td>
+          <td>AI customer support agent that resolves up to 50% of tickets autonomously.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/zendesk-ai/">Zendesk AI</a></td>
+          <td>Paid</td>
+          <td>High</td>
+          <td>AI across Zendesk for auto-routing, intent detection, and agent assist.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/forethought/">Forethought</a></td>
+          <td>Paid</td>
+          <td>Medium</td>
+          <td>AI support automation that predicts intent and surfaces knowledge to agents.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/tidio/">Tidio</a></td>
+          <td>Freemium</td>
+          <td>High</td>
+          <td>SMB-focused chat platform with the Lyro AI Agent that handles routine queries and proactively captures leads.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/botpress/">Botpress</a></td>
+          <td>Freemium</td>
+          <td>High</td>
+          <td>Developer-focused platform for building serious, highly customisable AI chatbots with full code control.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/pagergpt/">PagerGPT</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>No-code AI agent builder trained on business data that takes real actions like bookings and refunds.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/solvea/">Solvea</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>No-code AI receptionist that answers calls, emails, SMS, and live chats 24/7 for small businesses.</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>
 <section>

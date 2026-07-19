@@ -89,6 +89,22 @@ p{color:var(--g);margin-bottom:16px}
 .linklist{display:flex;flex-wrap:wrap;gap:10px 18px}
 .linklist a{color:var(--g);text-decoration:none;font-size:14.5px}
 .linklist a:hover{color:var(--cyan)}
+.data-table-wrap{overflow-x:auto;margin-top:8px;border:1px solid var(--line);border-radius:14px}
+.data-table{width:100%;border-collapse:collapse;font-size:14px;background:#0d0917}
+.data-table th,.data-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+.data-table td:last-child,.data-table th:last-child{white-space:normal}
+.data-table th{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--g2);background:#100b1a}
+.data-table td{color:var(--g)}
+.data-table td a{color:#eef2f7;font-weight:600;text-decoration:none}
+.data-table td a:hover{color:var(--cyan)}
+.data-table tbody tr:last-child td{border-bottom:none}
+.data-table tbody tr:hover{background:rgba(255,255,255,.03)}
+.facts-table{width:100%;border-collapse:collapse;font-size:14.5px}
+.facts-table th{width:130px;text-align:left;color:var(--g2);font-weight:600;font-size:12.5px;letter-spacing:.03em;padding:12px 16px;vertical-align:top}
+.facts-table td{padding:12px 16px 12px 0;color:var(--g);border-bottom:1px solid var(--line)}
+.facts-table td a{color:var(--cyan);text-decoration:none}
+.facts-table td a:hover{text-decoration:underline}
+.facts-table tr:last-child td,.facts-table tr:last-child th{border-bottom:none}
 footer{position:relative;z-index:1;border-top:1px solid var(--line);margin-top:64px;padding:34px 24px}
 footer .wrap{display:flex;flex-direction:column;gap:14px}
 .foot-links{display:flex;flex-wrap:wrap;gap:8px 20px}
@@ -97,7 +113,7 @@ footer .wrap{display:flex;flex-direction:column;gap:14px}
 .foot-fine{font-size:12.5px;color:var(--g2);line-height:1.7}
 @media(max-width:560px){nav{padding:12px 16px}.wrap{padding:0 16px}.nav-links{gap:12px}}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Sales & CRM AI Tools","numberOfItems":15,"itemListElement":[{"@type":"ListItem","position":1,"url":"https://www.okiru.biz/tools/adapt/","name":"Adapt"},{"@type":"ListItem","position":2,"url":"https://www.okiru.biz/tools/clearcrm/","name":"ClearCRM"},{"@type":"ListItem","position":3,"url":"https://www.okiru.biz/tools/galcode/","name":"Galcode"},{"@type":"ListItem","position":4,"url":"https://www.okiru.biz/tools/shopos/","name":"ShopOS"},{"@type":"ListItem","position":5,"url":"https://www.okiru.biz/tools/whatsapp-ai-sales-copilot/","name":"WhatsApp AI Sales Copilot"},{"@type":"ListItem","position":6,"url":"https://www.okiru.biz/tools/apollo-io/","name":"Apollo.io"},{"@type":"ListItem","position":7,"url":"https://www.okiru.biz/tools/syncgtm/","name":"SyncGTM"},{"@type":"ListItem","position":8,"url":"https://www.okiru.biz/tools/clay/","name":"Clay"},{"@type":"ListItem","position":9,"url":"https://www.okiru.biz/tools/instantly-ai/","name":"Instantly.ai"},{"@type":"ListItem","position":10,"url":"https://www.okiru.biz/tools/outreach/","name":"Outreach"},{"@type":"ListItem","position":11,"url":"https://www.okiru.biz/tools/salesloft/","name":"Salesloft"},{"@type":"ListItem","position":12,"url":"https://www.okiru.biz/tools/hubspot-ai/","name":"HubSpot AI"},{"@type":"ListItem","position":13,"url":"https://www.okiru.biz/tools/libertify/","name":"Libertify"},{"@type":"ListItem","position":14,"url":"https://www.okiru.biz/tools/whatsapp-crm/","name":"WhatsApp CRM"},{"@type":"ListItem","position":15,"url":"https://www.okiru.biz/tools/anybiz/","name":"Anybiz"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ItemList","name":"Sales & CRM AI Tools","numberOfItems":15,"itemListElement":[{"@type":"ListItem","position":1,"url":"https://www.okiru.biz/tools/adapt/","name":"Adapt"},{"@type":"ListItem","position":2,"url":"https://www.okiru.biz/tools/clearcrm/","name":"ClearCRM"},{"@type":"ListItem","position":3,"url":"https://www.okiru.biz/tools/galcode/","name":"Galcode"},{"@type":"ListItem","position":4,"url":"https://www.okiru.biz/tools/shopos/","name":"ShopOS"},{"@type":"ListItem","position":5,"url":"https://www.okiru.biz/tools/whatsapp-ai-sales-copilot/","name":"WhatsApp AI Sales Copilot"},{"@type":"ListItem","position":6,"url":"https://www.okiru.biz/tools/apollo-io/","name":"Apollo.io"},{"@type":"ListItem","position":7,"url":"https://www.okiru.biz/tools/syncgtm/","name":"SyncGTM"},{"@type":"ListItem","position":8,"url":"https://www.okiru.biz/tools/clay/","name":"Clay"},{"@type":"ListItem","position":9,"url":"https://www.okiru.biz/tools/instantly-ai/","name":"Instantly.ai"},{"@type":"ListItem","position":10,"url":"https://www.okiru.biz/tools/outreach/","name":"Outreach"},{"@type":"ListItem","position":11,"url":"https://www.okiru.biz/tools/salesloft/","name":"Salesloft"},{"@type":"ListItem","position":12,"url":"https://www.okiru.biz/tools/hubspot-ai/","name":"HubSpot AI"},{"@type":"ListItem","position":13,"url":"https://www.okiru.biz/tools/libertify/","name":"Libertify"},{"@type":"ListItem","position":14,"url":"https://www.okiru.biz/tools/whatsapp-crm/","name":"WhatsApp CRM"},{"@type":"ListItem","position":15,"url":"https://www.okiru.biz/tools/anybiz/","name":"Anybiz"}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.okiru.biz/"},{"@type":"ListItem","position":2,"name":"AI Tools","item":"https://www.okiru.biz/tools/"},{"@type":"ListItem","position":3,"name":"Sales & CRM","item":"https://www.okiru.biz/category/sales-and-crm/"}]}]}</script>
 </head>
 <body>
 
@@ -114,82 +130,102 @@ footer .wrap{display:flex;flex-direction:column;gap:14px}
 <div class="crumbs"><a href="/">Home</a> › <a href="/tools/">AI Tools</a> › <span>Sales &amp; CRM</span></div>
 <h1>Sales &amp; CRM AI Tools</h1>
 <p class="lede">15 Sales &amp; CRM tools reviewed and rated. Click any tool for details, or use the <a href="/toolkit/" style="color:var(--cyan)">AI Advisor</a> to find the best fit for your goal.</p>
-<div class="grid">
-  <a class="card" href="/tools/adapt/">
-    <div class="card-name">Adapt</div>
-    <div class="card-meta">Freemium · Medium reliability</div>
-    <div class="card-desc">B2B sales-intelligence platform with AI that enriches contact data and powers prospecting.</div>
-  </a>
-  <a class="card" href="/tools/clearcrm/">
-    <div class="card-name">ClearCRM</div>
-    <div class="card-meta">Freemium · Medium reliability</div>
-    <div class="card-desc">AI-powered CRM that automates contact management and follow-ups.</div>
-  </a>
-  <a class="card" href="/tools/galcode/">
-    <div class="card-name">Galcode</div>
-    <div class="card-meta">Freemium · Medium reliability</div>
-    <div class="card-desc">AI sales agents that automate CRM updates and outreach.</div>
-  </a>
-  <a class="card" href="/tools/shopos/">
-    <div class="card-name">ShopOS</div>
-    <div class="card-meta">Freemium · Medium reliability</div>
-    <div class="card-desc">AI-powered commerce platform that automates online store operations.</div>
-  </a>
-  <a class="card" href="/tools/whatsapp-ai-sales-copilot/">
-    <div class="card-name">WhatsApp AI Sales Copilot</div>
-    <div class="card-meta">Paid · Medium reliability</div>
-    <div class="card-desc">AI copilot that automates WhatsApp sales conversations and follow-ups.</div>
-  </a>
-  <a class="card" href="/tools/apollo-io/">
-    <div class="card-name">Apollo.io</div>
-    <div class="card-meta">Freemium · High reliability</div>
-    <div class="card-desc">Budget-friendly prospecting platform with 275M+ contact database, built-in email sequences, and a dialer.</div>
-  </a>
-  <a class="card" href="/tools/syncgtm/">
-    <div class="card-name">SyncGTM</div>
-    <div class="card-meta">Freemium · High reliability</div>
-    <div class="card-desc">Uses waterfall enrichment to query 50+ data providers for unmatched outbound sales data coverage.</div>
-  </a>
-  <a class="card" href="/tools/clay/">
-    <div class="card-name">Clay</div>
-    <div class="card-meta">Freemium · High reliability</div>
-    <div class="card-desc">Data enrichment platform that automates lead research workflows and personalised prospecting at scale.</div>
-  </a>
-  <a class="card" href="/tools/instantly-ai/">
-    <div class="card-name">Instantly.ai</div>
-    <div class="card-meta">Freemium · High reliability</div>
-    <div class="card-desc">High-volume cold email automation with built-in account warmup and deliverability optimisation.</div>
-  </a>
-  <a class="card" href="/tools/outreach/">
-    <div class="card-name">Outreach</div>
-    <div class="card-meta">Paid · High reliability</div>
-    <div class="card-desc">Enterprise standard for AI-powered sales engagement orchestration across email, calls, and LinkedIn.</div>
-  </a>
-  <a class="card" href="/tools/salesloft/">
-    <div class="card-name">Salesloft</div>
-    <div class="card-meta">Paid · High reliability</div>
-    <div class="card-desc">Integrates revenue intelligence to prioritise seller actions based on real-time buyer signals and intent.</div>
-  </a>
-  <a class="card" href="/tools/hubspot-ai/">
-    <div class="card-name">HubSpot AI</div>
-    <div class="card-meta">Freemium · High reliability</div>
-    <div class="card-desc">AI woven throughout HubSpot CRM for lead scoring, content generation, and campaign optimisation.</div>
-  </a>
-  <a class="card" href="/tools/libertify/">
-    <div class="card-name">Libertify</div>
-    <div class="card-meta">Freemium · Medium reliability</div>
-    <div class="card-desc">Converts PDFs and presentations into AI video walkthroughs with real-time engagement tracking for sales teams.</div>
-  </a>
-  <a class="card" href="/tools/whatsapp-crm/">
-    <div class="card-name">WhatsApp CRM</div>
-    <div class="card-meta">Freemium · Medium reliability</div>
-    <div class="card-desc">WhatsApp-specific CRM that automates account warming, real-time translation, and high-volume campaigns.</div>
-  </a>
-  <a class="card" href="/tools/anybiz/">
-    <div class="card-name">Anybiz</div>
-    <div class="card-meta">Paid · Medium reliability</div>
-    <div class="card-desc">AI SDRs for B2B sales automation, handling email, LinkedIn, and phone outreach with lead scoring.</div>
-  </a>
+<div class="data-table-wrap">
+  <table class="data-table">
+    <thead><tr><th>Tool</th><th>Price</th><th>Reliability</th><th>Description</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><a href="/tools/adapt/">Adapt</a></td>
+        <td>Freemium</td>
+        <td>Medium</td>
+        <td>B2B sales-intelligence platform with AI that enriches contact data and powers prospecting.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/clearcrm/">ClearCRM</a></td>
+        <td>Freemium</td>
+        <td>Medium</td>
+        <td>AI-powered CRM that automates contact management and follow-ups.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/galcode/">Galcode</a></td>
+        <td>Freemium</td>
+        <td>Medium</td>
+        <td>AI sales agents that automate CRM updates and outreach.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/shopos/">ShopOS</a></td>
+        <td>Freemium</td>
+        <td>Medium</td>
+        <td>AI-powered commerce platform that automates online store operations.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/whatsapp-ai-sales-copilot/">WhatsApp AI Sales Copilot</a></td>
+        <td>Paid</td>
+        <td>Medium</td>
+        <td>AI copilot that automates WhatsApp sales conversations and follow-ups.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/apollo-io/">Apollo.io</a></td>
+        <td>Freemium</td>
+        <td>High</td>
+        <td>Budget-friendly prospecting platform with 275M+ contact database, built-in email sequences, and a dialer.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/syncgtm/">SyncGTM</a></td>
+        <td>Freemium</td>
+        <td>High</td>
+        <td>Uses waterfall enrichment to query 50+ data providers for unmatched outbound sales data coverage.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/clay/">Clay</a></td>
+        <td>Freemium</td>
+        <td>High</td>
+        <td>Data enrichment platform that automates lead research workflows and personalised prospecting at scale.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/instantly-ai/">Instantly.ai</a></td>
+        <td>Freemium</td>
+        <td>High</td>
+        <td>High-volume cold email automation with built-in account warmup and deliverability optimisation.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/outreach/">Outreach</a></td>
+        <td>Paid</td>
+        <td>High</td>
+        <td>Enterprise standard for AI-powered sales engagement orchestration across email, calls, and LinkedIn.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/salesloft/">Salesloft</a></td>
+        <td>Paid</td>
+        <td>High</td>
+        <td>Integrates revenue intelligence to prioritise seller actions based on real-time buyer signals and intent.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/hubspot-ai/">HubSpot AI</a></td>
+        <td>Freemium</td>
+        <td>High</td>
+        <td>AI woven throughout HubSpot CRM for lead scoring, content generation, and campaign optimisation.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/libertify/">Libertify</a></td>
+        <td>Freemium</td>
+        <td>Medium</td>
+        <td>Converts PDFs and presentations into AI video walkthroughs with real-time engagement tracking for sales teams.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/whatsapp-crm/">WhatsApp CRM</a></td>
+        <td>Freemium</td>
+        <td>Medium</td>
+        <td>WhatsApp-specific CRM that automates account warming, real-time translation, and high-volume campaigns.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/anybiz/">Anybiz</a></td>
+        <td>Paid</td>
+        <td>Medium</td>
+        <td>AI SDRs for B2B sales automation, handling email, LinkedIn, and phone outreach with lead scoring.</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 </main>
 

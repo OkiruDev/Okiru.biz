@@ -89,6 +89,22 @@ p{color:var(--g);margin-bottom:16px}
 .linklist{display:flex;flex-wrap:wrap;gap:10px 18px}
 .linklist a{color:var(--g);text-decoration:none;font-size:14.5px}
 .linklist a:hover{color:var(--cyan)}
+.data-table-wrap{overflow-x:auto;margin-top:8px;border:1px solid var(--line);border-radius:14px}
+.data-table{width:100%;border-collapse:collapse;font-size:14px;background:#0d0917}
+.data-table th,.data-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+.data-table td:last-child,.data-table th:last-child{white-space:normal}
+.data-table th{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--g2);background:#100b1a}
+.data-table td{color:var(--g)}
+.data-table td a{color:#eef2f7;font-weight:600;text-decoration:none}
+.data-table td a:hover{color:var(--cyan)}
+.data-table tbody tr:last-child td{border-bottom:none}
+.data-table tbody tr:hover{background:rgba(255,255,255,.03)}
+.facts-table{width:100%;border-collapse:collapse;font-size:14.5px}
+.facts-table th{width:130px;text-align:left;color:var(--g2);font-weight:600;font-size:12.5px;letter-spacing:.03em;padding:12px 16px;vertical-align:top}
+.facts-table td{padding:12px 16px 12px 0;color:var(--g);border-bottom:1px solid var(--line)}
+.facts-table td a{color:var(--cyan);text-decoration:none}
+.facts-table td a:hover{text-decoration:underline}
+.facts-table tr:last-child td,.facts-table tr:last-child th{border-bottom:none}
 footer{position:relative;z-index:1;border-top:1px solid var(--line);margin-top:64px;padding:34px 24px}
 footer .wrap{display:flex;flex-direction:column;gap:14px}
 .foot-links{display:flex;flex-wrap:wrap;gap:8px 20px}
@@ -157,6 +173,16 @@ details.faq-item summary:hover{background:#0d0917}
   <a class="btn btn-ghost" href="https://hermesagent.ai" target="_blank" rel="noopener nofollow">Visit Hermes Agent ↗</a>
 </div>
 <div class="taglist"><span class="tag">agent</span><span class="tag">automation</span><span class="tag">workflow</span></div>
+<div class="data-table-wrap">
+  <table class="facts-table">
+    <tbody>
+      <tr><th scope="row">Category</th><td><a href="/category/automation/">Automation</a></td></tr>
+      <tr><th scope="row">Pricing</th><td>Free</td></tr>
+      <tr><th scope="row">Reliability</th><td>Medium reliability</td></tr>
+      <tr><th scope="row">Website</th><td><a href="https://hermesagent.ai" target="_blank" rel="noopener nofollow">hermesagent.ai</a></td></tr>
+    </tbody>
+  </table>
+</div>
 <section>
   <h2>What is Hermes Agent?</h2>
   <p>Hermes Agent is an AI tool in the <a href="/category/automation/" style="color:var(--cyan)">Automation</a> category. Autonomous AI agent that automates productivity workflows. It is rated <strong>Medium reliability</strong> and is <strong>Free</strong>.</p>
@@ -171,52 +197,66 @@ details.faq-item summary:hover{background:#0d0917}
 
 <section>
   <h2>Automation alternatives to Hermes Agent</h2>
-  <div class="grid">
-    <a class="card" href="/tools/blitz-rocket/">
-      <div class="card-name">Blitz Rocket</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">AI agents that automate social-media marketing and outreach campaigns.</div>
-    </a>
-    <a class="card" href="/tools/keyapi-ai/">
-      <div class="card-name">Keyapi.ai</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">Automates social-media marketing workflows through a single API.</div>
-    </a>
-    <a class="card" href="/tools/pine-ai/">
-      <div class="card-name">Pine AI</div>
-      <div class="card-meta">Paid · Medium</div>
-      <div class="card-desc">AI agent that makes phone calls to negotiate bills and cancel services.</div>
-    </a>
-    <a class="card" href="/tools/relevance-ai/">
-      <div class="card-name">Relevance AI</div>
-      <div class="card-meta">Freemium · High</div>
-      <div class="card-desc">Build and deploy teams of AI agents to automate business work.</div>
-    </a>
-    <a class="card" href="/tools/webscraping-ai/">
-      <div class="card-name">WebScraping.AI</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">API that scrapes and extracts web data with AI, handling proxies.</div>
-    </a>
-    <a class="card" href="/tools/zapier-ai/">
-      <div class="card-name">Zapier AI</div>
-      <div class="card-meta">Freemium · High</div>
-      <div class="card-desc">AI-assisted workflow automation connecting 6,000+ apps with natural language.</div>
-    </a>
-    <a class="card" href="/tools/make/">
-      <div class="card-name">Make</div>
-      <div class="card-meta">Freemium · High</div>
-      <div class="card-desc">Visual automation platform for complex multi-step workflows across cloud apps.</div>
-    </a>
-    <a class="card" href="/tools/n8n/">
-      <div class="card-name">n8n</div>
-      <div class="card-meta">Free · Medium</div>
-      <div class="card-desc">Open-source workflow automation with self-hosting for full data control.</div>
-    </a>
-    <a class="card" href="/tools/dust/">
-      <div class="card-name">Dust</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">Platform to build custom AI assistants connected to your company's internal data.</div>
-    </a>
+  <div class="data-table-wrap">
+    <table class="data-table">
+      <thead><tr><th>Tool</th><th>Price</th><th>Reliability</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href="/tools/blitz-rocket/">Blitz Rocket</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>AI agents that automate social-media marketing and outreach campaigns.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/keyapi-ai/">Keyapi.ai</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>Automates social-media marketing workflows through a single API.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/pine-ai/">Pine AI</a></td>
+          <td>Paid</td>
+          <td>Medium</td>
+          <td>AI agent that makes phone calls to negotiate bills and cancel services.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/relevance-ai/">Relevance AI</a></td>
+          <td>Freemium</td>
+          <td>High</td>
+          <td>Build and deploy teams of AI agents to automate business work.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/webscraping-ai/">WebScraping.AI</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>API that scrapes and extracts web data with AI, handling proxies.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/zapier-ai/">Zapier AI</a></td>
+          <td>Freemium</td>
+          <td>High</td>
+          <td>AI-assisted workflow automation connecting 6,000+ apps with natural language.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/make/">Make</a></td>
+          <td>Freemium</td>
+          <td>High</td>
+          <td>Visual automation platform for complex multi-step workflows across cloud apps.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/n8n/">n8n</a></td>
+          <td>Free</td>
+          <td>Medium</td>
+          <td>Open-source workflow automation with self-hosting for full data control.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/dust/">Dust</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>Platform to build custom AI assistants connected to your company's internal data.</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>
 <section>

@@ -89,6 +89,22 @@ p{color:var(--g);margin-bottom:16px}
 .linklist{display:flex;flex-wrap:wrap;gap:10px 18px}
 .linklist a{color:var(--g);text-decoration:none;font-size:14.5px}
 .linklist a:hover{color:var(--cyan)}
+.data-table-wrap{overflow-x:auto;margin-top:8px;border:1px solid var(--line);border-radius:14px}
+.data-table{width:100%;border-collapse:collapse;font-size:14px;background:#0d0917}
+.data-table th,.data-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+.data-table td:last-child,.data-table th:last-child{white-space:normal}
+.data-table th{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--g2);background:#100b1a}
+.data-table td{color:var(--g)}
+.data-table td a{color:#eef2f7;font-weight:600;text-decoration:none}
+.data-table td a:hover{color:var(--cyan)}
+.data-table tbody tr:last-child td{border-bottom:none}
+.data-table tbody tr:hover{background:rgba(255,255,255,.03)}
+.facts-table{width:100%;border-collapse:collapse;font-size:14.5px}
+.facts-table th{width:130px;text-align:left;color:var(--g2);font-weight:600;font-size:12.5px;letter-spacing:.03em;padding:12px 16px;vertical-align:top}
+.facts-table td{padding:12px 16px 12px 0;color:var(--g);border-bottom:1px solid var(--line)}
+.facts-table td a{color:var(--cyan);text-decoration:none}
+.facts-table td a:hover{text-decoration:underline}
+.facts-table tr:last-child td,.facts-table tr:last-child th{border-bottom:none}
 footer{position:relative;z-index:1;border-top:1px solid var(--line);margin-top:64px;padding:34px 24px}
 footer .wrap{display:flex;flex-direction:column;gap:14px}
 .foot-links{display:flex;flex-wrap:wrap;gap:8px 20px}
@@ -157,6 +173,16 @@ details.faq-item summary:hover{background:#0d0917}
   <a class="btn btn-ghost" href="https://wadesk.io/" target="_blank" rel="noopener nofollow">Visit WhatsApp CRM ↗</a>
 </div>
 <div class="taglist"><span class="tag">whatsapp</span><span class="tag">crm</span><span class="tag">messaging</span></div>
+<div class="data-table-wrap">
+  <table class="facts-table">
+    <tbody>
+      <tr><th scope="row">Category</th><td><a href="/category/sales-and-crm/">Sales &amp; CRM</a></td></tr>
+      <tr><th scope="row">Pricing</th><td>Free plan available</td></tr>
+      <tr><th scope="row">Reliability</th><td>Medium reliability</td></tr>
+      <tr><th scope="row">Website</th><td><a href="https://wadesk.io/" target="_blank" rel="noopener nofollow">wadesk.io/</a></td></tr>
+    </tbody>
+  </table>
+</div>
 <section>
   <h2>What is WhatsApp CRM?</h2>
   <p>WhatsApp CRM is an AI tool in the <a href="/category/sales-and-crm/" style="color:var(--cyan)">Sales &amp; CRM</a> category. WhatsApp-specific CRM that automates account warming, real-time translation, and high-volume campaigns. It is rated <strong>Medium reliability</strong> and is <strong>Free plan available</strong>.</p>
@@ -171,52 +197,66 @@ details.faq-item summary:hover{background:#0d0917}
 
 <section>
   <h2>Sales &amp; CRM alternatives to WhatsApp CRM</h2>
-  <div class="grid">
-    <a class="card" href="/tools/adapt/">
-      <div class="card-name">Adapt</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">B2B sales-intelligence platform with AI that enriches contact data and powers prospecting.</div>
-    </a>
-    <a class="card" href="/tools/clearcrm/">
-      <div class="card-name">ClearCRM</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">AI-powered CRM that automates contact management and follow-ups.</div>
-    </a>
-    <a class="card" href="/tools/galcode/">
-      <div class="card-name">Galcode</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">AI sales agents that automate CRM updates and outreach.</div>
-    </a>
-    <a class="card" href="/tools/shopos/">
-      <div class="card-name">ShopOS</div>
-      <div class="card-meta">Freemium · Medium</div>
-      <div class="card-desc">AI-powered commerce platform that automates online store operations.</div>
-    </a>
-    <a class="card" href="/tools/whatsapp-ai-sales-copilot/">
-      <div class="card-name">WhatsApp AI Sales Copilot</div>
-      <div class="card-meta">Paid · Medium</div>
-      <div class="card-desc">AI copilot that automates WhatsApp sales conversations and follow-ups.</div>
-    </a>
-    <a class="card" href="/tools/apollo-io/">
-      <div class="card-name">Apollo.io</div>
-      <div class="card-meta">Freemium · High</div>
-      <div class="card-desc">Budget-friendly prospecting platform with 275M+ contact database, built-in email sequences, and a dialer.</div>
-    </a>
-    <a class="card" href="/tools/syncgtm/">
-      <div class="card-name">SyncGTM</div>
-      <div class="card-meta">Freemium · High</div>
-      <div class="card-desc">Uses waterfall enrichment to query 50+ data providers for unmatched outbound sales data coverage.</div>
-    </a>
-    <a class="card" href="/tools/clay/">
-      <div class="card-name">Clay</div>
-      <div class="card-meta">Freemium · High</div>
-      <div class="card-desc">Data enrichment platform that automates lead research workflows and personalised prospecting at scale.</div>
-    </a>
-    <a class="card" href="/tools/instantly-ai/">
-      <div class="card-name">Instantly.ai</div>
-      <div class="card-meta">Freemium · High</div>
-      <div class="card-desc">High-volume cold email automation with built-in account warmup and deliverability optimisation.</div>
-    </a>
+  <div class="data-table-wrap">
+    <table class="data-table">
+      <thead><tr><th>Tool</th><th>Price</th><th>Reliability</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href="/tools/adapt/">Adapt</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>B2B sales-intelligence platform with AI that enriches contact data and powers prospecting.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/clearcrm/">ClearCRM</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>AI-powered CRM that automates contact management and follow-ups.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/galcode/">Galcode</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>AI sales agents that automate CRM updates and outreach.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/shopos/">ShopOS</a></td>
+          <td>Freemium</td>
+          <td>Medium</td>
+          <td>AI-powered commerce platform that automates online store operations.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/whatsapp-ai-sales-copilot/">WhatsApp AI Sales Copilot</a></td>
+          <td>Paid</td>
+          <td>Medium</td>
+          <td>AI copilot that automates WhatsApp sales conversations and follow-ups.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/apollo-io/">Apollo.io</a></td>
+          <td>Freemium</td>
+          <td>High</td>
+          <td>Budget-friendly prospecting platform with 275M+ contact database, built-in email sequences, and a dialer.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/syncgtm/">SyncGTM</a></td>
+          <td>Freemium</td>
+          <td>High</td>
+          <td>Uses waterfall enrichment to query 50+ data providers for unmatched outbound sales data coverage.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/clay/">Clay</a></td>
+          <td>Freemium</td>
+          <td>High</td>
+          <td>Data enrichment platform that automates lead research workflows and personalised prospecting at scale.</td>
+        </tr>
+        <tr>
+          <td><a href="/tools/instantly-ai/">Instantly.ai</a></td>
+          <td>Freemium</td>
+          <td>High</td>
+          <td>High-volume cold email automation with built-in account warmup and deliverability optimisation.</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>
 <section>

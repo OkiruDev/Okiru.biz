@@ -89,6 +89,22 @@ p{color:var(--g);margin-bottom:16px}
 .linklist{display:flex;flex-wrap:wrap;gap:10px 18px}
 .linklist a{color:var(--g);text-decoration:none;font-size:14.5px}
 .linklist a:hover{color:var(--cyan)}
+.data-table-wrap{overflow-x:auto;margin-top:8px;border:1px solid var(--line);border-radius:14px}
+.data-table{width:100%;border-collapse:collapse;font-size:14px;background:#0d0917}
+.data-table th,.data-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+.data-table td:last-child,.data-table th:last-child{white-space:normal}
+.data-table th{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--g2);background:#100b1a}
+.data-table td{color:var(--g)}
+.data-table td a{color:#eef2f7;font-weight:600;text-decoration:none}
+.data-table td a:hover{color:var(--cyan)}
+.data-table tbody tr:last-child td{border-bottom:none}
+.data-table tbody tr:hover{background:rgba(255,255,255,.03)}
+.facts-table{width:100%;border-collapse:collapse;font-size:14.5px}
+.facts-table th{width:130px;text-align:left;color:var(--g2);font-weight:600;font-size:12.5px;letter-spacing:.03em;padding:12px 16px;vertical-align:top}
+.facts-table td{padding:12px 16px 12px 0;color:var(--g);border-bottom:1px solid var(--line)}
+.facts-table td a{color:var(--cyan);text-decoration:none}
+.facts-table td a:hover{text-decoration:underline}
+.facts-table tr:last-child td,.facts-table tr:last-child th{border-bottom:none}
 footer{position:relative;z-index:1;border-top:1px solid var(--line);margin-top:64px;padding:34px 24px}
 footer .wrap{display:flex;flex-direction:column;gap:14px}
 .foot-links{display:flex;flex-wrap:wrap;gap:8px 20px}
@@ -97,7 +113,7 @@ footer .wrap{display:flex;flex-direction:column;gap:14px}
 .foot-fine{font-size:12.5px;color:var(--g2);line-height:1.7}
 @media(max-width:560px){nav{padding:12px 16px}.wrap{padding:0 16px}.nav-links{gap:12px}}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Okiru Solutions AI Tools","numberOfItems":5,"itemListElement":[{"@type":"ListItem","position":1,"url":"https://www.okiru.biz/tools/okiru-ai-advisor/","name":"Okiru AI Advisor"},{"@type":"ListItem","position":2,"url":"https://www.okiru.biz/tools/okiru-custom-chatbots/","name":"Okiru Custom Chatbots"},{"@type":"ListItem","position":3,"url":"https://www.okiru.biz/tools/okiru-workflow-automation/","name":"Okiru Workflow Automation"},{"@type":"ListItem","position":4,"url":"https://www.okiru.biz/tools/okiru-document-intelligence/","name":"Okiru Document Intelligence"},{"@type":"ListItem","position":5,"url":"https://www.okiru.biz/tools/okiru-ai-training-platform/","name":"Okiru AI Training Platform"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ItemList","name":"Okiru Solutions AI Tools","numberOfItems":5,"itemListElement":[{"@type":"ListItem","position":1,"url":"https://www.okiru.biz/tools/okiru-ai-advisor/","name":"Okiru AI Advisor"},{"@type":"ListItem","position":2,"url":"https://www.okiru.biz/tools/okiru-custom-chatbots/","name":"Okiru Custom Chatbots"},{"@type":"ListItem","position":3,"url":"https://www.okiru.biz/tools/okiru-workflow-automation/","name":"Okiru Workflow Automation"},{"@type":"ListItem","position":4,"url":"https://www.okiru.biz/tools/okiru-document-intelligence/","name":"Okiru Document Intelligence"},{"@type":"ListItem","position":5,"url":"https://www.okiru.biz/tools/okiru-ai-training-platform/","name":"Okiru AI Training Platform"}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.okiru.biz/"},{"@type":"ListItem","position":2,"name":"AI Tools","item":"https://www.okiru.biz/tools/"},{"@type":"ListItem","position":3,"name":"Okiru Solutions","item":"https://www.okiru.biz/category/okiru-solutions/"}]}]}</script>
 </head>
 <body>
 
@@ -114,32 +130,42 @@ footer .wrap{display:flex;flex-direction:column;gap:14px}
 <div class="crumbs"><a href="/">Home</a> › <a href="/tools/">AI Tools</a> › <span>Okiru Solutions</span></div>
 <h1>Okiru Solutions AI Tools</h1>
 <p class="lede">5 Okiru Solutions tools reviewed and rated. Click any tool for details, or use the <a href="/toolkit/" style="color:var(--cyan)">AI Advisor</a> to find the best fit for your goal.</p>
-<div class="grid">
-  <a class="card" href="/tools/okiru-ai-advisor/">
-    <div class="card-name">Okiru AI Advisor ★</div>
-    <div class="card-meta">Freemium · High reliability</div>
-    <div class="card-desc">Okiru's AI-powered tool recommendation engine — the advisor you're using right now — helping businesses find the right A…</div>
-  </a>
-  <a class="card" href="/tools/okiru-custom-chatbots/">
-    <div class="card-name">Okiru Custom Chatbots ★</div>
-    <div class="card-meta">Custom · High reliability</div>
-    <div class="card-desc">Branded conversational AI chatbots trained on your business data and embedded into your website, app, or internal platfo…</div>
-  </a>
-  <a class="card" href="/tools/okiru-workflow-automation/">
-    <div class="card-name">Okiru Workflow Automation ★</div>
-    <div class="card-meta">Custom · High reliability</div>
-    <div class="card-desc">End-to-end AI automation that connects your tools, data, and processes — eliminating repetitive tasks and accelerating d…</div>
-  </a>
-  <a class="card" href="/tools/okiru-document-intelligence/">
-    <div class="card-name">Okiru Document Intelligence ★</div>
-    <div class="card-meta">Custom · High reliability</div>
-    <div class="card-desc">AI that reads, extracts, summarises, and acts on your contracts, reports, invoices, and business documents at scale.</div>
-  </a>
-  <a class="card" href="/tools/okiru-ai-training-platform/">
-    <div class="card-name">Okiru AI Training Platform ★</div>
-    <div class="card-meta">Custom · High reliability</div>
-    <div class="card-desc">Custom AI training programmes built around your team's roles, tools, and industry — practical upskilling that sticks.</div>
-  </a>
+<div class="data-table-wrap">
+  <table class="data-table">
+    <thead><tr><th>Tool</th><th>Price</th><th>Reliability</th><th>Description</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><a href="/tools/okiru-ai-advisor/">Okiru AI Advisor ★</a></td>
+        <td>Freemium</td>
+        <td>High</td>
+        <td>Okiru's AI-powered tool recommendation engine — the advisor you're using right now — helping businesses find the right A…</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/okiru-custom-chatbots/">Okiru Custom Chatbots ★</a></td>
+        <td>Custom</td>
+        <td>High</td>
+        <td>Branded conversational AI chatbots trained on your business data and embedded into your website, app, or internal platfo…</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/okiru-workflow-automation/">Okiru Workflow Automation ★</a></td>
+        <td>Custom</td>
+        <td>High</td>
+        <td>End-to-end AI automation that connects your tools, data, and processes — eliminating repetitive tasks and accelerating d…</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/okiru-document-intelligence/">Okiru Document Intelligence ★</a></td>
+        <td>Custom</td>
+        <td>High</td>
+        <td>AI that reads, extracts, summarises, and acts on your contracts, reports, invoices, and business documents at scale.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/okiru-ai-training-platform/">Okiru AI Training Platform ★</a></td>
+        <td>Custom</td>
+        <td>High</td>
+        <td>Custom AI training programmes built around your team's roles, tools, and industry — practical upskilling that sticks.</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 </main>
 

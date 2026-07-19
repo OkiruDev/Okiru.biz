@@ -89,6 +89,22 @@ p{color:var(--g);margin-bottom:16px}
 .linklist{display:flex;flex-wrap:wrap;gap:10px 18px}
 .linklist a{color:var(--g);text-decoration:none;font-size:14.5px}
 .linklist a:hover{color:var(--cyan)}
+.data-table-wrap{overflow-x:auto;margin-top:8px;border:1px solid var(--line);border-radius:14px}
+.data-table{width:100%;border-collapse:collapse;font-size:14px;background:#0d0917}
+.data-table th,.data-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+.data-table td:last-child,.data-table th:last-child{white-space:normal}
+.data-table th{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--g2);background:#100b1a}
+.data-table td{color:var(--g)}
+.data-table td a{color:#eef2f7;font-weight:600;text-decoration:none}
+.data-table td a:hover{color:var(--cyan)}
+.data-table tbody tr:last-child td{border-bottom:none}
+.data-table tbody tr:hover{background:rgba(255,255,255,.03)}
+.facts-table{width:100%;border-collapse:collapse;font-size:14.5px}
+.facts-table th{width:130px;text-align:left;color:var(--g2);font-weight:600;font-size:12.5px;letter-spacing:.03em;padding:12px 16px;vertical-align:top}
+.facts-table td{padding:12px 16px 12px 0;color:var(--g);border-bottom:1px solid var(--line)}
+.facts-table td a{color:var(--cyan);text-decoration:none}
+.facts-table td a:hover{text-decoration:underline}
+.facts-table tr:last-child td,.facts-table tr:last-child th{border-bottom:none}
 footer{position:relative;z-index:1;border-top:1px solid var(--line);margin-top:64px;padding:34px 24px}
 footer .wrap{display:flex;flex-direction:column;gap:14px}
 .foot-links{display:flex;flex-wrap:wrap;gap:8px 20px}
@@ -97,7 +113,7 @@ footer .wrap{display:flex;flex-direction:column;gap:14px}
 .foot-fine{font-size:12.5px;color:var(--g2);line-height:1.7}
 @media(max-width:560px){nav{padding:12px 16px}.wrap{padding:0 16px}.nav-links{gap:12px}}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Automation AI Tools","numberOfItems":29,"itemListElement":[{"@type":"ListItem","position":1,"url":"https://www.okiru.biz/tools/blitz-rocket/","name":"Blitz Rocket"},{"@type":"ListItem","position":2,"url":"https://www.okiru.biz/tools/hermes-agent/","name":"Hermes Agent"},{"@type":"ListItem","position":3,"url":"https://www.okiru.biz/tools/keyapi-ai/","name":"Keyapi.ai"},{"@type":"ListItem","position":4,"url":"https://www.okiru.biz/tools/pine-ai/","name":"Pine AI"},{"@type":"ListItem","position":5,"url":"https://www.okiru.biz/tools/relevance-ai/","name":"Relevance AI"},{"@type":"ListItem","position":6,"url":"https://www.okiru.biz/tools/webscraping-ai/","name":"WebScraping.AI"},{"@type":"ListItem","position":7,"url":"https://www.okiru.biz/tools/zapier-ai/","name":"Zapier AI"},{"@type":"ListItem","position":8,"url":"https://www.okiru.biz/tools/make/","name":"Make"},{"@type":"ListItem","position":9,"url":"https://www.okiru.biz/tools/n8n/","name":"n8n"},{"@type":"ListItem","position":10,"url":"https://www.okiru.biz/tools/dust/","name":"Dust"},{"@type":"ListItem","position":11,"url":"https://www.okiru.biz/tools/gojiberry-ai/","name":"Gojiberry AI"},{"@type":"ListItem","position":12,"url":"https://www.okiru.biz/tools/monday-com/","name":"monday.com"},{"@type":"ListItem","position":13,"url":"https://www.okiru.biz/tools/lindy/","name":"Lindy"},{"@type":"ListItem","position":14,"url":"https://www.okiru.biz/tools/gumloop/","name":"Gumloop"},{"@type":"ListItem","position":15,"url":"https://www.okiru.biz/tools/workbeaver/","name":"Workbeaver"},{"@type":"ListItem","position":16,"url":"https://www.okiru.biz/tools/airtable-ai/","name":"Airtable AI"},{"@type":"ListItem","position":17,"url":"https://www.okiru.biz/tools/bardeen/","name":"Bardeen"},{"@type":"ListItem","position":18,"url":"https://www.okiru.biz/tools/zapier/","name":"Zapier"},{"@type":"ListItem","position":19,"url":"https://www.okiru.biz/tools/devs-ai/","name":"Devs.ai"},{"@type":"ListItem","position":20,"url":"https://www.okiru.biz/tools/dify/","name":"Dify"},{"@type":"ListItem","position":21,"url":"https://www.okiru.biz/tools/loopa/","name":"Loopa"},{"@type":"ListItem","position":22,"url":"https://www.okiru.biz/tools/idox-ai-guardrail/","name":"iDox.ai Guardrail"},{"@type":"ListItem","position":23,"url":"https://www.okiru.biz/tools/stable-commerce/","name":"Stable Commerce"},{"@type":"ListItem","position":24,"url":"https://www.okiru.biz/tools/whatsapp-warmup-tool/","name":"WhatsApp Warmup Tool"},{"@type":"ListItem","position":25,"url":"https://www.okiru.biz/tools/atera-it-autopilot/","name":"Atera IT Autopilot"},{"@type":"ListItem","position":26,"url":"https://www.okiru.biz/tools/rtila/","name":"RTILA"},{"@type":"ListItem","position":27,"url":"https://www.okiru.biz/tools/angie/","name":"Angie"},{"@type":"ListItem","position":28,"url":"https://www.okiru.biz/tools/mindstudio/","name":"MindStudio"},{"@type":"ListItem","position":29,"url":"https://www.okiru.biz/tools/hexomatic/","name":"Hexomatic"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ItemList","name":"Automation AI Tools","numberOfItems":29,"itemListElement":[{"@type":"ListItem","position":1,"url":"https://www.okiru.biz/tools/blitz-rocket/","name":"Blitz Rocket"},{"@type":"ListItem","position":2,"url":"https://www.okiru.biz/tools/hermes-agent/","name":"Hermes Agent"},{"@type":"ListItem","position":3,"url":"https://www.okiru.biz/tools/keyapi-ai/","name":"Keyapi.ai"},{"@type":"ListItem","position":4,"url":"https://www.okiru.biz/tools/pine-ai/","name":"Pine AI"},{"@type":"ListItem","position":5,"url":"https://www.okiru.biz/tools/relevance-ai/","name":"Relevance AI"},{"@type":"ListItem","position":6,"url":"https://www.okiru.biz/tools/webscraping-ai/","name":"WebScraping.AI"},{"@type":"ListItem","position":7,"url":"https://www.okiru.biz/tools/zapier-ai/","name":"Zapier AI"},{"@type":"ListItem","position":8,"url":"https://www.okiru.biz/tools/make/","name":"Make"},{"@type":"ListItem","position":9,"url":"https://www.okiru.biz/tools/n8n/","name":"n8n"},{"@type":"ListItem","position":10,"url":"https://www.okiru.biz/tools/dust/","name":"Dust"},{"@type":"ListItem","position":11,"url":"https://www.okiru.biz/tools/gojiberry-ai/","name":"Gojiberry AI"},{"@type":"ListItem","position":12,"url":"https://www.okiru.biz/tools/monday-com/","name":"monday.com"},{"@type":"ListItem","position":13,"url":"https://www.okiru.biz/tools/lindy/","name":"Lindy"},{"@type":"ListItem","position":14,"url":"https://www.okiru.biz/tools/gumloop/","name":"Gumloop"},{"@type":"ListItem","position":15,"url":"https://www.okiru.biz/tools/workbeaver/","name":"Workbeaver"},{"@type":"ListItem","position":16,"url":"https://www.okiru.biz/tools/airtable-ai/","name":"Airtable AI"},{"@type":"ListItem","position":17,"url":"https://www.okiru.biz/tools/bardeen/","name":"Bardeen"},{"@type":"ListItem","position":18,"url":"https://www.okiru.biz/tools/zapier/","name":"Zapier"},{"@type":"ListItem","position":19,"url":"https://www.okiru.biz/tools/devs-ai/","name":"Devs.ai"},{"@type":"ListItem","position":20,"url":"https://www.okiru.biz/tools/dify/","name":"Dify"},{"@type":"ListItem","position":21,"url":"https://www.okiru.biz/tools/loopa/","name":"Loopa"},{"@type":"ListItem","position":22,"url":"https://www.okiru.biz/tools/idox-ai-guardrail/","name":"iDox.ai Guardrail"},{"@type":"ListItem","position":23,"url":"https://www.okiru.biz/tools/stable-commerce/","name":"Stable Commerce"},{"@type":"ListItem","position":24,"url":"https://www.okiru.biz/tools/whatsapp-warmup-tool/","name":"WhatsApp Warmup Tool"},{"@type":"ListItem","position":25,"url":"https://www.okiru.biz/tools/atera-it-autopilot/","name":"Atera IT Autopilot"},{"@type":"ListItem","position":26,"url":"https://www.okiru.biz/tools/rtila/","name":"RTILA"},{"@type":"ListItem","position":27,"url":"https://www.okiru.biz/tools/angie/","name":"Angie"},{"@type":"ListItem","position":28,"url":"https://www.okiru.biz/tools/mindstudio/","name":"MindStudio"},{"@type":"ListItem","position":29,"url":"https://www.okiru.biz/tools/hexomatic/","name":"Hexomatic"}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.okiru.biz/"},{"@type":"ListItem","position":2,"name":"AI Tools","item":"https://www.okiru.biz/tools/"},{"@type":"ListItem","position":3,"name":"Automation","item":"https://www.okiru.biz/category/automation/"}]}]}</script>
 </head>
 <body>
 
@@ -114,152 +130,186 @@ footer .wrap{display:flex;flex-direction:column;gap:14px}
 <div class="crumbs"><a href="/">Home</a> › <a href="/tools/">AI Tools</a> › <span>Automation</span></div>
 <h1>Automation AI Tools</h1>
 <p class="lede">29 Automation tools reviewed and rated. Click any tool for details, or use the <a href="/toolkit/" style="color:var(--cyan)">AI Advisor</a> to find the best fit for your goal.</p>
-<div class="grid">
-  <a class="card" href="/tools/blitz-rocket/">
-    <div class="card-name">Blitz Rocket</div>
-    <div class="card-meta">Freemium · Medium reliability</div>
-    <div class="card-desc">AI agents that automate social-media marketing and outreach campaigns.</div>
-  </a>
-  <a class="card" href="/tools/hermes-agent/">
-    <div class="card-name">Hermes Agent</div>
-    <div class="card-meta">Free · Medium reliability</div>
-    <div class="card-desc">Autonomous AI agent that automates productivity workflows.</div>
-  </a>
-  <a class="card" href="/tools/keyapi-ai/">
-    <div class="card-name">Keyapi.ai</div>
-    <div class="card-meta">Freemium · Medium reliability</div>
-    <div class="card-desc">Automates social-media marketing workflows through a single API.</div>
-  </a>
-  <a class="card" href="/tools/pine-ai/">
-    <div class="card-name">Pine AI</div>
-    <div class="card-meta">Paid · Medium reliability</div>
-    <div class="card-desc">AI agent that makes phone calls to negotiate bills and cancel services.</div>
-  </a>
-  <a class="card" href="/tools/relevance-ai/">
-    <div class="card-name">Relevance AI</div>
-    <div class="card-meta">Freemium · High reliability</div>
-    <div class="card-desc">Build and deploy teams of AI agents to automate business work.</div>
-  </a>
-  <a class="card" href="/tools/webscraping-ai/">
-    <div class="card-name">WebScraping.AI</div>
-    <div class="card-meta">Freemium · Medium reliability</div>
-    <div class="card-desc">API that scrapes and extracts web data with AI, handling proxies.</div>
-  </a>
-  <a class="card" href="/tools/zapier-ai/">
-    <div class="card-name">Zapier AI</div>
-    <div class="card-meta">Freemium · High reliability</div>
-    <div class="card-desc">AI-assisted workflow automation connecting 6,000+ apps with natural language.</div>
-  </a>
-  <a class="card" href="/tools/make/">
-    <div class="card-name">Make</div>
-    <div class="card-meta">Freemium · High reliability</div>
-    <div class="card-desc">Visual automation platform for complex multi-step workflows across cloud apps.</div>
-  </a>
-  <a class="card" href="/tools/n8n/">
-    <div class="card-name">n8n</div>
-    <div class="card-meta">Free · Medium reliability</div>
-    <div class="card-desc">Open-source workflow automation with self-hosting for full data control.</div>
-  </a>
-  <a class="card" href="/tools/dust/">
-    <div class="card-name">Dust</div>
-    <div class="card-meta">Freemium · Medium reliability</div>
-    <div class="card-desc">Platform to build custom AI assistants connected to your company's internal data.</div>
-  </a>
-  <a class="card" href="/tools/gojiberry-ai/">
-    <div class="card-name">Gojiberry AI ★</div>
-    <div class="card-meta">Freemium · High reliability</div>
-    <div class="card-desc">AI sales agent that finds warm B2B leads using 10+ intent signals (funding, new roles, events), runs LinkedIn outreach o…</div>
-  </a>
-  <a class="card" href="/tools/monday-com/">
-    <div class="card-name">monday.com</div>
-    <div class="card-meta">Freemium · High reliability</div>
-    <div class="card-desc">AI-powered work management platform with automated reporting, risk detection, and cross-functional workflows.</div>
-  </a>
-  <a class="card" href="/tools/lindy/">
-    <div class="card-name">Lindy</div>
-    <div class="card-meta">Freemium · High reliability</div>
-    <div class="card-desc">Build custom AI agents for specific business processes without code — from email triage to CRM updates.</div>
-  </a>
-  <a class="card" href="/tools/gumloop/">
-    <div class="card-name">Gumloop</div>
-    <div class="card-meta">Freemium · Medium reliability</div>
-    <div class="card-desc">Visual no-code canvas designed specifically for chaining multiple AI model calls into complex pipelines.</div>
-  </a>
-  <a class="card" href="/tools/workbeaver/">
-    <div class="card-name">Workbeaver</div>
-    <div class="card-meta">Paid · Medium reliability</div>
-    <div class="card-desc">AI agent that performs tasks automatically by controlling desktops and browsers like a virtual employee.</div>
-  </a>
-  <a class="card" href="/tools/airtable-ai/">
-    <div class="card-name">Airtable AI</div>
-    <div class="card-meta">Freemium · High reliability</div>
-    <div class="card-desc">AI fields and workflows inside Airtable for summarising, categorising, translating, and generating content from your dat…</div>
-  </a>
-  <a class="card" href="/tools/bardeen/">
-    <div class="card-name">Bardeen</div>
-    <div class="card-meta">Freemium · High reliability</div>
-    <div class="card-desc">Browser-based AI automation that scrapes, enriches, and connects 100+ apps with one-click playbooks.</div>
-  </a>
-  <a class="card" href="/tools/zapier/">
-    <div class="card-name">Zapier</div>
-    <div class="card-meta">Freemium · High reliability</div>
-    <div class="card-desc">The most widely used workflow automation platform — now with AI Copilot and AI Agents that connect 7,000+ apps and run e…</div>
-  </a>
-  <a class="card" href="/tools/devs-ai/">
-    <div class="card-name">Devs.ai</div>
-    <div class="card-meta">Freemium · Medium reliability</div>
-    <div class="card-desc">Helps teams build governed AI apps and agents on company data, with model access, enterprise search, and integrations.</div>
-  </a>
-  <a class="card" href="/tools/dify/">
-    <div class="card-name">Dify</div>
-    <div class="card-meta">Freemium · Medium reliability</div>
-    <div class="card-desc">Visual platform for building AI agents, RAG pipelines, and chat apps, publishable as web apps, APIs, or MCP tools.</div>
-  </a>
-  <a class="card" href="/tools/loopa/">
-    <div class="card-name">Loopa</div>
-    <div class="card-meta">Freemium · Medium reliability</div>
-    <div class="card-desc">AI agent workspace for research, document analysis, image generation, presentations, and multi-agent workflows.</div>
-  </a>
-  <a class="card" href="/tools/idox-ai-guardrail/">
-    <div class="card-name">iDox.ai Guardrail</div>
-    <div class="card-meta">Paid · Medium reliability</div>
-    <div class="card-desc">Endpoint AI security tool that intercepts sensitive data before it reaches ChatGPT, Copilot, or other AI platforms.</div>
-  </a>
-  <a class="card" href="/tools/stable-commerce/">
-    <div class="card-name">Stable Commerce</div>
-    <div class="card-meta">Paid · Medium reliability</div>
-    <div class="card-desc">Autonomous AI agents that manage ecommerce operations end to end, from inventory to pricing and analytics.</div>
-  </a>
-  <a class="card" href="/tools/whatsapp-warmup-tool/">
-    <div class="card-name">WhatsApp Warmup Tool</div>
-    <div class="card-meta">Paid · Medium reliability</div>
-    <div class="card-desc">Uses AI-driven conversations to simulate human activity on WhatsApp accounts, building account reputation.</div>
-  </a>
-  <a class="card" href="/tools/atera-it-autopilot/">
-    <div class="card-name">Atera IT Autopilot</div>
-    <div class="card-meta">Paid · Medium reliability</div>
-    <div class="card-desc">An AI agent that handles routine IT support work autonomously, resolving helpdesk tickets around the clock.</div>
-  </a>
-  <a class="card" href="/tools/rtila/">
-    <div class="card-name">RTILA</div>
-    <div class="card-meta">Freemium · Medium reliability</div>
-    <div class="card-desc">Desktop-based web scraping and automation studio combining visual scraping with local AI models.</div>
-  </a>
-  <a class="card" href="/tools/angie/">
-    <div class="card-name">Angie</div>
-    <div class="card-meta">Freemium · Medium reliability</div>
-    <div class="card-desc">WordPress automation agent that executes complex multi-step tasks like bulk updates and site audits.</div>
-  </a>
-  <a class="card" href="/tools/mindstudio/">
-    <div class="card-name">MindStudio</div>
-    <div class="card-meta">Freemium · Medium reliability</div>
-    <div class="card-desc">Build and deploy AI agents without code using a visual builder with 200+ models and 1,000+ integrations.</div>
-  </a>
-  <a class="card" href="/tools/hexomatic/">
-    <div class="card-name">Hexomatic</div>
-    <div class="card-meta">Paid · Medium reliability</div>
-    <div class="card-desc">Uses AI to scrape websites, find local business prospects, monitor Amazon products, and bulk create screenshots.</div>
-  </a>
+<div class="data-table-wrap">
+  <table class="data-table">
+    <thead><tr><th>Tool</th><th>Price</th><th>Reliability</th><th>Description</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><a href="/tools/blitz-rocket/">Blitz Rocket</a></td>
+        <td>Freemium</td>
+        <td>Medium</td>
+        <td>AI agents that automate social-media marketing and outreach campaigns.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/hermes-agent/">Hermes Agent</a></td>
+        <td>Free</td>
+        <td>Medium</td>
+        <td>Autonomous AI agent that automates productivity workflows.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/keyapi-ai/">Keyapi.ai</a></td>
+        <td>Freemium</td>
+        <td>Medium</td>
+        <td>Automates social-media marketing workflows through a single API.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/pine-ai/">Pine AI</a></td>
+        <td>Paid</td>
+        <td>Medium</td>
+        <td>AI agent that makes phone calls to negotiate bills and cancel services.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/relevance-ai/">Relevance AI</a></td>
+        <td>Freemium</td>
+        <td>High</td>
+        <td>Build and deploy teams of AI agents to automate business work.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/webscraping-ai/">WebScraping.AI</a></td>
+        <td>Freemium</td>
+        <td>Medium</td>
+        <td>API that scrapes and extracts web data with AI, handling proxies.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/zapier-ai/">Zapier AI</a></td>
+        <td>Freemium</td>
+        <td>High</td>
+        <td>AI-assisted workflow automation connecting 6,000+ apps with natural language.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/make/">Make</a></td>
+        <td>Freemium</td>
+        <td>High</td>
+        <td>Visual automation platform for complex multi-step workflows across cloud apps.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/n8n/">n8n</a></td>
+        <td>Free</td>
+        <td>Medium</td>
+        <td>Open-source workflow automation with self-hosting for full data control.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/dust/">Dust</a></td>
+        <td>Freemium</td>
+        <td>Medium</td>
+        <td>Platform to build custom AI assistants connected to your company's internal data.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/gojiberry-ai/">Gojiberry AI ★</a></td>
+        <td>Freemium</td>
+        <td>High</td>
+        <td>AI sales agent that finds warm B2B leads using 10+ intent signals (funding, new roles, events), runs LinkedIn outreach o…</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/monday-com/">monday.com</a></td>
+        <td>Freemium</td>
+        <td>High</td>
+        <td>AI-powered work management platform with automated reporting, risk detection, and cross-functional workflows.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/lindy/">Lindy</a></td>
+        <td>Freemium</td>
+        <td>High</td>
+        <td>Build custom AI agents for specific business processes without code — from email triage to CRM updates.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/gumloop/">Gumloop</a></td>
+        <td>Freemium</td>
+        <td>Medium</td>
+        <td>Visual no-code canvas designed specifically for chaining multiple AI model calls into complex pipelines.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/workbeaver/">Workbeaver</a></td>
+        <td>Paid</td>
+        <td>Medium</td>
+        <td>AI agent that performs tasks automatically by controlling desktops and browsers like a virtual employee.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/airtable-ai/">Airtable AI</a></td>
+        <td>Freemium</td>
+        <td>High</td>
+        <td>AI fields and workflows inside Airtable for summarising, categorising, translating, and generating content from your dat…</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/bardeen/">Bardeen</a></td>
+        <td>Freemium</td>
+        <td>High</td>
+        <td>Browser-based AI automation that scrapes, enriches, and connects 100+ apps with one-click playbooks.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/zapier/">Zapier</a></td>
+        <td>Freemium</td>
+        <td>High</td>
+        <td>The most widely used workflow automation platform — now with AI Copilot and AI Agents that connect 7,000+ apps and run e…</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/devs-ai/">Devs.ai</a></td>
+        <td>Freemium</td>
+        <td>Medium</td>
+        <td>Helps teams build governed AI apps and agents on company data, with model access, enterprise search, and integrations.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/dify/">Dify</a></td>
+        <td>Freemium</td>
+        <td>Medium</td>
+        <td>Visual platform for building AI agents, RAG pipelines, and chat apps, publishable as web apps, APIs, or MCP tools.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/loopa/">Loopa</a></td>
+        <td>Freemium</td>
+        <td>Medium</td>
+        <td>AI agent workspace for research, document analysis, image generation, presentations, and multi-agent workflows.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/idox-ai-guardrail/">iDox.ai Guardrail</a></td>
+        <td>Paid</td>
+        <td>Medium</td>
+        <td>Endpoint AI security tool that intercepts sensitive data before it reaches ChatGPT, Copilot, or other AI platforms.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/stable-commerce/">Stable Commerce</a></td>
+        <td>Paid</td>
+        <td>Medium</td>
+        <td>Autonomous AI agents that manage ecommerce operations end to end, from inventory to pricing and analytics.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/whatsapp-warmup-tool/">WhatsApp Warmup Tool</a></td>
+        <td>Paid</td>
+        <td>Medium</td>
+        <td>Uses AI-driven conversations to simulate human activity on WhatsApp accounts, building account reputation.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/atera-it-autopilot/">Atera IT Autopilot</a></td>
+        <td>Paid</td>
+        <td>Medium</td>
+        <td>An AI agent that handles routine IT support work autonomously, resolving helpdesk tickets around the clock.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/rtila/">RTILA</a></td>
+        <td>Freemium</td>
+        <td>Medium</td>
+        <td>Desktop-based web scraping and automation studio combining visual scraping with local AI models.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/angie/">Angie</a></td>
+        <td>Freemium</td>
+        <td>Medium</td>
+        <td>WordPress automation agent that executes complex multi-step tasks like bulk updates and site audits.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/mindstudio/">MindStudio</a></td>
+        <td>Freemium</td>
+        <td>Medium</td>
+        <td>Build and deploy AI agents without code using a visual builder with 200+ models and 1,000+ integrations.</td>
+      </tr>
+      <tr>
+        <td><a href="/tools/hexomatic/">Hexomatic</a></td>
+        <td>Paid</td>
+        <td>Medium</td>
+        <td>Uses AI to scrape websites, find local business prospects, monitor Amazon products, and bulk create screenshots.</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 </main>
 
