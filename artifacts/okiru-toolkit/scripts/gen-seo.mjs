@@ -556,6 +556,16 @@ function blogPage(post, allPosts, categories) {
           { "@type": "ListItem", position: 3, name: post.title, item: canonical },
         ],
       },
+      ...(post.faq && post.faq.length
+        ? [{
+            "@type": "FAQPage",
+            mainEntity: post.faq.map((f) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: { "@type": "Answer", text: f.a },
+            })),
+          }]
+        : []),
     ],
   });
 
